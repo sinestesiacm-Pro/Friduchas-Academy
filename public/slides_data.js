@@ -390,17 +390,20 @@ window.slideDefinitions = [
     num: '07',
     cat: 'SLIDE 07 (REF 7) — ANNESSI CUTANEI',
     title: 'Gli annessi cutanei',
-    desc: '4 elementi con icone SVG e macro occhio ad alta risoluzione con taglio diagonale.',
+    desc: '4 elementi con icone SVG e macro occhio ad alta risoluzione originale Canva con taglio diagonale.',
     thumb: 'ref_crops/ref_slide_07.png',
     refCrop: 'ref_crops/ref_slide_07.png',
     render: () => `<div class="w-full h-full bg-[#faf7f2] relative flex flex-col justify-between p-10 md:p-14 select-none overflow-hidden text-[#171412]">
+            <!-- Sfondo ad alta definizione con macro occhio e taglio diagonale originale -->
+            <img src="img/slide07_macro_eye.jpg" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none z-0" style="object-position: right bottom;" alt="Macro occhio e annessi cutanei">
+
             <div class="flex justify-between items-center z-20">
               <p class="header-meta">ANATOMIA DELLA PELLE</p>
               <p class="header-meta">MODULO 1 &nbsp;|&nbsp; FOUNDATION &nbsp;&nbsp; <strong class="text-[#1c1917] text-sm">07</strong></p>
             </div>
 
-            <div class="flex w-full flex-grow items-stretch my-auto z-10">
-              <div class="w-[58%] flex flex-col justify-center pr-6 py-2">
+            <div class="flex w-full flex-grow items-center my-auto z-10">
+              <div class="w-[58%] max-w-xl flex flex-col justify-center pr-6 py-2">
                 <h2 class="serif-title text-4xl md:text-5xl lg:text-[4.2rem] text-[#171412] mb-3 leading-[0.96]">
                   Gli annessi <span class="pink-italic">cutanei</span>
                 </h2>
@@ -409,7 +412,7 @@ window.slideDefinitions = [
                 </p>
 
                 <!-- 4 Items with SVG Icons -->
-                <div class="flex flex-col space-y-3 max-w-sm">
+                <div class="flex flex-col space-y-3.5 max-w-sm">
                   <div class="flex items-center space-x-3.5">
                     <div class="w-8 h-8 rounded-full bg-[#d8318a] text-white flex items-center justify-center flex-shrink-0 text-xs shadow-sm">
                       <i class="fa-solid fa-feather"></i>
@@ -451,14 +454,9 @@ window.slideDefinitions = [
                   </div>
                 </div>
               </div>
-
-              <!-- Right Diagonal Macro Crop -->
-              <div class="w-[42%] h-full relative overflow-hidden cut-slide7-eye shadow-inner">
-                <img src="img/slide05_macro_model.jpg" class="w-full h-full object-cover object-center scale-110" alt="Dettaglio occhio modella">
-              </div>
             </div>
 
-            <div class="flex items-center space-x-3">
+            <div class="flex items-center space-x-3 z-20">
               <div class="w-10 h-[2px] bg-[#d8318a]"></div>
               <p class="header-meta text-[#78716c]">ANATOMIA DELLA PELLE</p>
             </div>
