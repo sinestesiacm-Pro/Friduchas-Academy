@@ -1,0 +1,70 @@
+{
+  "system": "Friduchas Academy Master PMU Presentation",
+  "generated_at": "2026-10-30T01:17:00Z",
+  "engine": "AI Generated (Gemini Imagen & Flux AI)",
+  "assets": {
+    "slide_01_cover": {
+      "path": "public/img/ai_cover_model.jpg",
+      "model": "Gemini AI",
+      "dimensions": "896x1200",
+      "style": "High-fashion beauty magazine portrait with radiant dewy skin, peach blush and warm lighting",
+      "motion_cut": "Organic ellipse wave mask with ivory-blush gradient transition"
+    },
+    "slide_02_agenda": {
+      "path": "public/img/ai_texture_cream.jpg",
+      "model": "Gemini AI",
+      "dimensions": "1200x896",
+      "style": "Macro velvety blush-pink skincare cream swirl",
+      "motion_cut": "Floating luxury editorial capsule card with depth shadow"
+    },
+    "slide_03_key_concept": {
+      "path": "public/img/ai_shoulder_profile.jpg",
+      "model": "Gemini AI",
+      "dimensions": "896x1200",
+      "style": "Graceful side & back profile showing glowing neck, shoulder and jawline",
+      "motion_cut": "Polygon cut with seamless ivory edge dissolve"
+    },
+    "slide_04_strati_pelle": {
+      "path": "public/img/anatomy_skin_3d_pro.png",
+      "model": "High-Precision Medical 3D Vector Render",
+      "dimensions": "1200x1200",
+      "style": "Isometric skin block cutaway with follicle, sebaceous gland, capillary loops, adipose lobules",
+      "motion_cut": "Center floating block with leader callout brackets"
+    },
+    "slide_05_statement_blush": {
+      "path": "public/img/ai_macro_eye.jpg",
+      "model": "Flux AI",
+      "dimensions": "1024x1280",
+      "style": "Extreme macro of eye and feathered groomed brow with pore-level realism",
+      "motion_cut": "Full-bleed bleed on pink cipria canvas"
+    },
+    "slide_06_cellule": {
+      "path": "public/img/cell_*.png",
+      "model": "Histological Vector Microscopy",
+      "dimensions": "4x circular",
+      "style": "Micrographs of keratinocytes, melanocytes, fibroblasts, Langerhans cells",
+      "motion_cut": "Floating circular biological discs"
+    },
+    "slide_07_annessi": {
+      "path": "public/img/ai_macro_eye.jpg",
+      "model": "Flux AI",
+      "dimensions": "1024x1280",
+      "style": "Macro eyebrow and ocular architecture",
+      "motion_cut": "Angular diagonal motion graphics slice (clip-path polygon)"
+    },
+    "slide_08_funzioni": {
+      "path": "public/img/ref_venn_slide08.png",
+      "model": "Translucent Petal Geometry",
+      "dimensions": "Translucent pink",
+      "style": "4-petal Venn diagram with Parisienne cursive calligraphy",
+      "motion_cut": "Central floating petal layout"
+    },
+    "slide_09_statement_obsidian": {
+      "path": "public/img/ai_dark_model.jpg",
+      "model": "Flux AI",
+      "dimensions": "1024x1280",
+      "style": "Tanned glowing beauty model with head tilted upward and sculptural warm rim lighting",
+      "motion_cut": "Seamless obsidian black melt with zero borders or hard cuts"
+    }
+  }
+}

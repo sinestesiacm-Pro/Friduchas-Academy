@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Slide Renderer 1920x1080</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      width: 1920px;
+      height: 1080px;
+      overflow: hidden;
+      background: #faf7f2;
+      font-family: var(--font-sans);
+    }
+
+    .serif-title {
+      font-family: var(--font-serif);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .pink-italic {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-weight: 500;
+      color: #d8318a;
+    }
+
+    .pink-roman {
+      font-family: var(--font-serif);
+      font-style: normal;
+      font-weight: 500;
+      color: #d8318a;
+    }
+
+    .header-meta {
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      color: #78716c;
+      text-transform: uppercase;
+    }
+
+    .cut-slide1-pink {
+      clip-path: polygon(22% 0, 100% 0, 100% 100%, 4% 100%);
+    }
+
+    .cut-slide1-photo {
+      clip-path: polygon(16% 0, 100% 0, 100% 100%, 2% 100%);
+    }
+
+    .cut-slide2-swatch {
+      clip-path: polygon(16% 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .cut-slide3-pink {
+      clip-path: polygon(20% 0, 100% 0, 100% 100%, 2% 100%);
+    }
+
+    .cut-slide7-eye {
+      clip-path: polygon(14% 0, 100% 0, 100% 100%, 0% 100%);
+    }
+  </style>
+</head>
+
+<body class="flex items-center justify-center">
+  <div id="slide-stage" style="width: 1920px; height: 1080px;" class="overflow-hidden relative"></div>
+
+  <script src="slides_data.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const slideIdx = parseInt(params.get('slide') || '4', 10) - 1;
+    const stage = document.getElementById('slide-stage');
+    if (window.slideDefinitions && window.slideDefinitions[slideIdx]) {
+      stage.innerHTML = window.slideDefinitions[slideIdx].render();
+    }
+  </script>
+</body>
+
+</html>

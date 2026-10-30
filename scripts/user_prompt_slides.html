@@ -1,0 +1,647 @@
+<USER_REQUEST>
+<!-- GOOGLE FONTS & ICONS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    :root {
+      /* FUENTES */
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+      /* PALETA DE COLORES */
+      --bg-cream: #faf7f2;
+      --bg-slide5-pink-start: #f6c4d8;
+      --bg-slide5-pink-mid: #f3b1cb;
+      --bg-slide5-pink-end: #e89ab8;
+      --bg-dark: #0b090a;
+      --accent-magenta: #d8318a;
+      --accent-magenta-deep: #c81e78;
+      --accent-rose-soft: #f48fb1;
+      --text-dark: #171412;
+      --text-body: #292524;
+      --text-muted: #57534e;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #18181b;
+      font-family: var(--font-sans);
+      color: var(--text-dark);
+      padding: 32px 16px 80px;
+    }
+
+    /* CONTENEDOR DE CADA SLIDE (1280x720 - 16:9) */
+    .slide-container {
+      width: 1280px;
+      height: 720px;
+      margin: 0 auto 40px auto;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+    }
+
+    /* CLASES TIPOGRÁFICAS EXACTAS (Capturas 1 y 2) */
+    .serif-title {
+      font-family: var(--font-serif);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 0.94;
+    }
+
+    .pink-italic {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-weight: 500;
+      color: var(--accent-magenta);
+    }
+
+    .pink-roman {
+      font-family: var(--font-serif);
+      font-style: normal;
+      font-weight: 500;
+      color: var(--accent-magenta);
+    }
+
+    .header-meta {
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+
+    /* RECORTES DIAGONALES (CLIP-PATH) */
+    .cut-slide1-pink { clip-path: polygon(22% 0, 100% 0, 100% 100%, 4% 100%); }
+    .cut-slide1-photo { clip-path: polygon(16% 0, 100% 0, 100% 100%, 2% 100%); }
+    .cut-slide2-swatch { clip-path: polygon(16% 0, 100% 0, 100% 100%, 0% 100%); }
+    .cut-slide3-pink { clip-path: polygon(20% 0, 100% 0, 100% 100%, 2% 100%); }
+    .cut-slide7-eye { clip-path: polygon(14% 0, 100% 0, 100% 100%, 0% 100%); }
+
+    /* FUSIÓN ORGÁNICA DE ROSTROS (SLIDE 5 Y SLIDE 9) */
+    .blend-photo-pink {
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.35) 9%, rgba(0,0,0,0.85) 18%, #000000 28%);
+      mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.35) 9%, rgba(0,0,0,0.85) 18%, #000000 28%);
+    }
+    .blend-photo-dark {
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 12%, rgba(0,0,0,0.9) 24%, #000000 35%);
+      mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 12%, rgba(0,0,0,0.9) 24%, #000000 35%);
+    }
+  </style>
+
+<!-- 9 SLIDES -->
+
+
+    <!-- SLIDE 01: Anatomia della pelle -->
+    <div class="slide-container" id="slide1" style="background: #faf7f2; padding: 0;">
+      <div style="display: flex; width: 100%; height: 100%; align-items: stretch;">
+        <!-- Left Column (54%) -->
+        <div style="width: 54%; padding: 44px 20px 44px 64px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <p class="header-meta">ANATOMIA DELLA PELLE</p>
+          </div>
+
+          <div style="margin: auto 0;">
+            <!-- Soft pink brush-stroke accent -->
+            <svg width="68" height="22" viewBox="0 0 68 22" style="margin-bottom: 18px;">
+              <path d="M4,15 Q28,3 62,8 Q45,16 12,18 Z" fill="#f48fb1" opacity="0.75"></path>
+              <path d="M10,12 Q34,5 54,9" stroke="#d8318a" stroke-width="2.5" stroke-linecap="round" fill="none"></path>
+            </svg>
+
+            <h1 class="serif-title" style="font-size: 96px; color: #171412; margin: 0 0 28px 0;">
+              Anatomia<br>della <span class="pink-italic">pelle</span>
+            </h1>
+            <p style="font-size: 20px; color: #292524; max-width: 440px; font-weight: 400; line-height: 1.45;">
+              Conoscere la struttura della pelle<br>è il <span style="color: #d8318a; font-weight: 600;">primo passo</span> per comprendere<br>come lavorare in modo sicuro,<br>consapevole e professionale.
+            </p>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 16px;">
+            <div style="width: 40px; height: 2px; background: #d8318a;"></div>
+            <p class="header-meta" style="color: #78716c;">FRIDUCHAS ACADEMY</p>
+          </div>
+        </div>
+
+        <!-- Right Column (46%) -->
+        <div class="cut-slide1-pink" style="width: 46%; height: 100%; background: linear-gradient(180deg, #fbcfe8 0%, #f48fb1 100%); padding-left: 38px; display: flex;">
+          <div class="cut-slide1-photo" style="width: 100%; height: 100%; overflow: hidden; background: #261c1a; display: flex; flex-direction: column; justify-content: space-between;">
+            <img src="https://img.magnific.com/free-photo/fashion-beauty-portrait-young-brunette-woman-with-evening-stylish-makeup-perfect-clean-skin-sexy-model-with-hair-bun-posing-studio-near-blue-wall-with-pink-bright-natural-lips_158538-24192.jpg" alt="Ritratto beauty modella" style="width: 100%; height: 88%; object-fit: cover; object-position: center 22%; transform: scale(1.22);">
+            <div style="height: 12%; background: #1c1412; display: flex; align-items: center; justify-content: flex-end; padding: 0 40px;">
+              <p style="font-size: 14px; font-weight: 600; letter-spacing: 0.16em; color: #f5f5f4; text-transform: uppercase;">MODULO 1 &nbsp;|&nbsp; FOUNDATION &nbsp;&nbsp; 01</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 02: Cosa vedremo in questo capitolo -->
+    <div class="slide-container" id="slide2" style="background: #faf7f2; padding: 44px 0 44px 64px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; padding-right: 64px;">
+        <p class="header-meta">ANATOMIA DELLA PELLE</p>
+        <p class="header-meta">MODULO 1 &nbsp;|&nbsp; FOUNDATION &nbsp;&nbsp; <strong style="color: #1c1917; font-size: 16px;">02</strong></p>
+      </div>
+
+      <div style="display: flex; width: 100%; flex-grow: 1; align-items: stretch; margin-top: 16px;">
+        <div style="width: 56%; display: flex; flex-direction: column; justify-content: space-between; padding-right: 24px;">
+          <div style="margin: auto 0;">
+            <h2 class="serif-title" style="font-size: 66px; color: #171412; margin: 0 0 38px 0;">
+              Cosa vedremo<br>in questo <span class="pink-italic">capitolo</span>
+            </h2>
+
+            <div style="display: flex; flex-direction: column; gap: 18px;">
+              <div style="display: flex; align-items: center; gap: 26px;">
+                <p style="font-size: 26px; color: #c0568f; font-weight: 600; min-width: 36px;">01</p>
+                <p style="font-size: 20px; font-weight: 500; color: #1c1917;">La struttura della pelle</p>
+              </div>
+              <div style="display: flex; align-items: center; gap: 26px;">
+                <p style="font-size: 26px; color: #c0568f; font-weight: 600; min-width: 36px;">02</p>
+                <p style="font-size: 20px; font-weight: 500; color: #1c1917;">Gli strati cutanei</p>
+              </div>
+              <div style="display: flex; align-items: center; gap: 26px;">
+                <p style="font-size: 26px; color: #c0568f; font-weight: 600; min-width: 36px;">03</p>
+                <p style="font-size: 20px; font-weight: 500; color: #1c1917;">Le funzioni della pelle</p>
+              </div>
+              <div style="display: flex; align-items: center; gap: 26px;">
+                <p style="font-size: 26px; color: #c0568f; font-weight: 600; min-width: 36px;">04</p>
+                <p style="font-size: 20px; font-weight: 500; color: #1c1917;">Le cellule principali</p>
+              </div>
+              <div style="display: flex; align-items: center; gap: 26px;">
+                <p style="font-size: 26px; color: #c0568f; font-weight: 600; min-width: 36px;">05</p>
+                <p style="font-size: 20px; font-weight: 500; color: #1c1917;">Gli annessi cutanei</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 16px;">
+            <div style="width: 40px; height: 2px; background: #d8318a;"></div>
+            <p class="header-meta" style="color: #78716c;">ANATOMIA DELLA PELLE</p>
+          </div>
+        </div>
+
+        <div style="width: 44%; height: 100%; padding-top: 24px; display: flex; align-items: flex-end;">
+          <div class="cut-slide2-swatch" style="width: 100%; height: 100%; overflow: hidden; background: #f8bbd0;">
+            <img src="https://img.magnific.com/premium-photo/pink-cosmetic-texture-background-makeup-skincare-cosmetics-product-cream-lipstick-moisturizer-macro-as-luxury-beauty-brand-holiday-flatlay-design_360074-29212.jpg" alt="Texture crema cosmetica rosa" style="width: 100%; height: 100%; object-fit: cover; transform: scale(1.06);">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 03: La pelle: un organo complesso (Captura 2 exacta) -->
+    <div class="slide-container" id="slide3" style="background: #faf7f2; padding: 0;">
+      <div style="display: flex; width: 100%; height: 100%; align-items: stretch;">
+        <div style="width: 54%; padding: 44px 24px 44px 64px; display: flex; flex-direction: column; justify-content: center;">
+          <h2 class="serif-title" style="font-size: 72px; color: #171412; margin: 0 0 22px 0;">
+            <span style="font-style: italic;">La pelle:</span><br>
+            <span class="pink-roman">un organo<br>complesso</span>
+          </h2>
+          <p style="font-size: 18px; color: #292524; margin: 0 0 26px 0; max-width: 470px; line-height: 1.45;">
+            La pelle è l'organo più esteso del nostro corpo, costituisce una barriera protettiva contro gli agenti esterni, chimici e fisici, e l'invasione dei patogeni. È inoltre coinvolta in molte funzioni importanti, tra cui:
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <div style="display: flex; align-items: center; gap: 16px;">
+              <div style="width: 34px; height: 34px; border-radius: 50%; background: #d8318a; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 14px;">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <p style="font-size: 18px; font-weight: 500; color: #1c1917;">Protegge dagli agenti esterni</p>
+            </div>
+            <div style="display: flex; align-items: center; gap: 16px;">
+              <div style="width: 34px; height: 34px; border-radius: 50%; background: #d8318a; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 14px;">
+                <i class="fa-solid fa-temperature-half"></i>
+              </div>
+              <p style="font-size: 18px; font-weight: 500; color: #1c1917;">Regola la temperatura corporea</p>
+            </div>
+            <div style="display: flex; align-items: center; gap: 16px;">
+              <div style="width: 34px; height: 34px; border-radius: 50%; background: #d8318a; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 14px;">
+                <i class="fa-solid fa-hand-dots"></i>
+              </div>
+              <p style="font-size: 18px; font-weight: 500; color: #1c1917;">Permette la percezione sensoriale</p>
+            </div>
+            <div style="display: flex; align-items: center; gap: 16px;">
+              <div style="width: 34px; height: 34px; border-radius: 50%; background: #d8318a; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 14px;">
+                <i class="fa-solid fa-rotate"></i>
+              </div>
+              <p style="font-size: 18px; font-weight: 500; color: #1c1917;">Partecipa al metabolismo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cut-slide3-pink" style="width: 46%; height: 100%; background: linear-gradient(165deg, #ffd6e7 0%, #f9a8d4 100%); padding-left: 58px; display: flex;">
+          <div class="cut-slide1-photo" style="width: 100%; height: 100%; overflow: hidden; background: #fce7f3; display: flex; flex-direction: column;">
+            <div style="height: 10%; background: #ead7cd; display: flex; align-items: center; justify-content: flex-end; padding: 0 40px;">
+              <p style="font-size: 14px; font-weight: 600; letter-spacing: 0.14em; color: #44403c; text-transform: uppercase;">MODULO 1 &nbsp;|&nbsp; FOUNDATION &nbsp;&nbsp; 03</p>
+            </div>
+            <img src="https://media.istockphoto.com/id/2157259746/photo/beauty-profile-of-young-european-woman-with-healthy-skin-natural-makeup-and-perfect-nose-lady.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=dHAkhckz-60Od90I2e7J8sWOXhdFuLjoQlnvmE-L3Po=" alt="Profilo spalla e labbra" style="width: 100%; height: 90%; object-fit: cover; object-position: right center; transform: scale(1.06);">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 04: Gli strati della pelle -->
+    <div class="slide-container" id="slide4" style="background: #faf7f2; padding: 44px 64px;">
+      <div style="display: flex; justify-content: flex-end; align-items: center;">
+        <p class="header-meta">MODULO 1 &nbsp;|&nbsp; FOUNDATION &nbsp;&nbsp; <strong style="color: #1c1917; font-size: 16px;">04</strong></p>
+      </div>
+
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 28px; flex-grow: 1;">
+        <div style="width: 43%; display: flex; flex-direction: column; gap: 18px;">
+          <h2 class="serif-title" style="font-size: 70px; color: #171412;">
+            <span style="font-style: italic;">Gli strati</span><br><span class="pink-italic">della pelle</span>
+          </h2>
+          <p style="font-size: 18px; color: #292524; max-width: 420px; line-height: 1.45;">
+            La pelle è formata da <strong style="color: #d8318a;">tre strati</strong> principali, ognuno con funzioni specifiche e fondamentali.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 6px;">
+            <div style="display: flex; align-items: center; gap: 16px;">
+              <div style="width: 38px; height: 38px; border-radius: 50%; background: #d8318a; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 15px;">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+              <div>
+                <p style="font-size: 19px; font-weight: 700; color: #1c1917;">Epidermide</p>
+                <p style="font-size: 17px; color: #44403c;">(strato più superficiale)</p>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 16px;">
+              <div style="width: 38px; height: 38px; border-radius: 50%; background: #d8318a; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 15px;">
+                <i class="fa-solid fa-water"></i>
+              </div>
+              <div>
+                <p style="font-size: 19px; font-weight: 700; color: #1c1917;">Derma</p>
+                <p style="font-size: 17px; color: #44403c;">(strato intermedio)</p>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 16px;">
+              <div style="width: 38px; height: 38px; border-radius: 50%; background: #d8318a; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 15px;">
+                <i class="fa-solid fa-braille"></i>
+              </div>
+              <div>
+                <p style="font-size: 19px; font-weight: 700; color: #1c1917;">Ipoderma</p>
+                <p style="font-size: 17px; color: #44403c;">(strato più profondo)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="width: 57%; display: flex; align-items: center; justify-content: center; gap: 14px;">
+          <svg viewBox="0 0 430 430" width="420" height="415">
+            <polygon points="200,398 55,342 215,292 355,348" fill="rgba(180, 130, 120, 0.18)"></polygon>
+            <path d="M 138,242 Q 130,130 162,28" fill="none" stroke="#3b2219" stroke-width="4.5" stroke-linecap="round"></path>
+            <path d="M 205,275 Q 198,145 232,36" fill="none" stroke="#3b2219" stroke-width="5.5" stroke-linecap="round"></path>
+            <path d="M 262,155 Q 260,92 288,38" fill="none" stroke="#3b2219" stroke-width="4" stroke-linecap="round"></path>
+            <polygon points="205,92 58,138 198,192 342,142" fill="#f5bda8" stroke="#e09c85" stroke-width="1.5"></polygon>
+            <polygon points="58,138 198,192 198,228 58,172" fill="#e6857b"></polygon>
+            <path d="M 58,172 Q 76,162 88,180 T 118,192 T 148,205 T 178,218 T 198,228" fill="none" stroke="#c85a53" stroke-width="3"></path>
+            <polygon points="198,192 342,142 342,178 198,228" fill="#d97267"></polygon>
+            <path d="M 198,228 Q 222,212 242,214 T 285,198 T 342,178" fill="none" stroke="#b54840" stroke-width="3"></path>
+            <polygon points="58,172 198,228 198,334 58,276" fill="#f4a8a3"></polygon>
+            <polygon points="198,228 342,178 342,282 198,334" fill="#e58e89"></polygon>
+            <polygon points="58,276 198,334 198,386 58,326" fill="#f7b76d"></polygon>
+            <polygon points="198,334 342,282 342,334 198,386" fill="#eba252"></polygon>
+            <g fill="#fbbf24" stroke="#d97706" stroke-width="1">
+              <circle cx="76" cy="302" r="11"></circle><circle cx="96" cy="312" r="12"></circle>
+              <circle cx="118" cy="322" r="11"></circle><circle cx="140" cy="332" r="12"></circle>
+              <circle cx="162" cy="342" r="11"></circle><circle cx="182" cy="352" r="12"></circle>
+              <circle cx="86" cy="322" r="10"></circle><circle cx="110" cy="334" r="11"></circle>
+              <circle cx="134" cy="346" r="10"></circle><circle cx="158" cy="356" r="11"></circle>
+              <circle cx="180" cy="368" r="10"></circle>
+              <circle cx="216" cy="354" r="12"></circle><circle cx="238" cy="344" r="11"></circle>
+              <circle cx="260" cy="336" r="12"></circle><circle cx="282" cy="326" r="11"></circle>
+              <circle cx="304" cy="316" r="12"></circle><circle cx="324" cy="306" r="11"></circle>
+              <circle cx="228" cy="366" r="10"></circle><circle cx="252" cy="356" r="11"></circle>
+              <circle cx="276" cy="344" r="10"></circle><circle cx="300" cy="332" r="11"></circle>
+            </g>
+            <path d="M 134,162 C 128,205 118,252 125,270 C 132,284 148,280 148,262 C 148,240 142,200 142,162 Z" fill="#b84a39"></path>
+            <ellipse cx="136" cy="264" rx="8" ry="13" fill="#4a2511"></ellipse>
+            <ellipse cx="152" cy="216" rx="13" ry="8" fill="#facc15"></ellipse>
+            <path d="M 200,185 C 194,232 182,282 190,302 C 198,316 216,310 214,290 C 212,265 208,222 208,185 Z" fill="#a33b2c"></path>
+            <ellipse cx="202" cy="294" rx="9" ry="14" fill="#3b1d0e"></ellipse>
+            <ellipse cx="220" cy="240" rx="14" ry="9" fill="#facc15"></ellipse>
+            <path d="M 64,292 Q 130,320 198,348 Q 270,320 336,292" fill="none" stroke="#dc2626" stroke-width="3.5"></path>
+            <path d="M 102,306 Q 108,260 95,222" fill="none" stroke="#dc2626" stroke-width="2.2"></path>
+            <path d="M 168,334 Q 175,285 182,250" fill="none" stroke="#dc2626" stroke-width="2.2"></path>
+            <path d="M 262,324 Q 255,275 272,232" fill="none" stroke="#dc2626" stroke-width="2.2"></path>
+            <path d="M 64,300 Q 130,328 198,356 Q 270,328 336,300" fill="none" stroke="#4f46e5" stroke-width="3.5"></path>
+            <path d="M 116,314 Q 124,268 112,230" fill="none" stroke="#4f46e5" stroke-width="2.2"></path>
+            <path d="M 244,334 Q 240,282 254,242" fill="none" stroke="#4f46e5" stroke-width="2.2"></path>
+            <path d="M 352,142 L 364,142 L 364,178 L 352,178" fill="none" stroke="#78716c" stroke-width="1.6"></path>
+            <line x1="364" y1="160" x2="395" y2="160" stroke="#78716c" stroke-width="1.6"></line>
+            <path d="M 352,182 L 364,182 L 364,280 L 352,280" fill="none" stroke="#78716c" stroke-width="1.6"></path>
+            <line x1="364" y1="231" x2="395" y2="231" stroke="#78716c" stroke-width="1.6"></line>
+            <path d="M 352,284 L 364,284 L 364,334 L 352,334" fill="none" stroke="#78716c" stroke-width="1.6"></path>
+            <line x1="364" y1="309" x2="395" y2="309" stroke="#78716c" stroke-width="1.6"></line>
+          </svg>
+
+          <div style="display: flex; flex-direction: column; justify-content: space-between; height: 172px; margin-top: 22px;">
+            <p style="font-size: 18px; font-weight: 600; color: #292524;">Epidermide</p>
+            <p style="font-size: 18px; font-weight: 600; color: #292524;">Derma</p>
+            <p style="font-size: 18px; font-weight: 600; color: #292524;">Ipoderma</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <div style="width: 40px; height: 2px; background: #d8318a;"></div>
+        <p class="header-meta" style="color: #78716c;">ANATOMIA DELLA PELLE</p>
+      </div>
+    </div>
+
+    <!-- SLIDE 05: La pelle non è solo ciò che vediamo (Captura 1 exacta) -->
+    <div class="slide-container" id="slide5" style="background: linear-gradient(90deg, #f6c4d8 0%, #f3b1cb 48%, #e89ab8 100%); padding: 0;">
+      <div style="display: flex; width: 100%; height: 100%; align-items: stretch;">
+        <div style="width: 50%; padding: 44px 16px 44px 64px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div></div>
+          <div style="margin: auto 0;">
+            <p class="serif-title" style="font-size: 40px; color: #1c1917; margin: 0 0 10px 0; font-weight: 500; line-height: 1.08;">
+              La <strong style="font-weight: 700;">pelle</strong> non è solo<br>ciò che vediamo,
+            </p>
+            <h2 class="pink-italic" style="font-size: 78px; line-height: 0.94; color: #c81e78; font-weight: 600;">
+              ma tutto<br>ciò che<br>fa per noi.
+            </h2>
+          </div>
+          <div style="display: flex; align-items: center; gap: 16px;">
+            <div style="width: 40px; height: 2px; background: #c81e78;"></div>
+            <p class="header-meta" style="color: #44403c;">FRIDUCHAS ACADEMY</p>
+          </div>
+        </div>
+
+        <div class="blend-photo-pink" style="width: 50%; height: 100%; overflow: hidden; display: flex;">
+          <img src="https://img.promptplum.com/cdn-cgi/image/q=78,scq=50,width=1400,height=1400,fit=contain,f=auto/promptImages/Gemini_Generated_Image_ujejrujejrujejru.jpg" alt="Dettaglio macro occhio e pelle con lentiggini" style="width: 100%; height: 100%; object-fit: cover; object-position: left center; transform: scale(1.05);">
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 06: Le cellule principali -->
+    <div class="slide-container" id="slide6" style="background: #faf7f2; padding: 44px 64px;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+        <div>
+          <h2 class="serif-title" style="font-size: 70px; color: #171412; margin: 0 0 16px 0;">
+            <span style="font-style: italic;">Le cellule</span><br><span class="pink-italic">principali</span>
+          </h2>
+          <p style="font-size: 18px; color: #292524; max-width: 520px; line-height: 1.45;">
+            La pelle è composta da diversi tipi di cellule, ognuna con un ruolo specifico che garantisce il corretto funzionamento della pelle.
+          </p>
+        </div>
+        <p class="header-meta">MODULO 1 &nbsp;|&nbsp; FOUNDATION &nbsp;&nbsp; <strong style="color: #1c1917; font-size: 16px;">06</strong></p>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; margin: auto 0; width: 100%;">
+        <!-- Cell 1 -->
+        <div style="flex: 1 1 0; display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <div style="width: 182px; height: 182px; border-radius: 50%; overflow: hidden; border: 4px solid #f8bbd0; margin-bottom: 16px; display: flex; align-items: center; justify-content: center; background: #f48fb1;">
+            <svg viewBox="0 0 160 160" width="182" height="182">
+              <rect width="160" height="160" fill="#f48fb1"></rect>
+              <g stroke="#ad1457" stroke-width="1.6" fill="#f8bbd0">
+                <ellipse cx="32" cy="28" rx="26" ry="10"></ellipse><ellipse cx="82" cy="26" rx="28" ry="10"></ellipse><ellipse cx="132" cy="28" rx="26" ry="10"></ellipse>
+                <ellipse cx="20" cy="52" rx="26" ry="12"></ellipse><ellipse cx="68" cy="54" rx="28" ry="12"></ellipse><ellipse cx="118" cy="52" rx="28" ry="12"></ellipse>
+                <ellipse cx="42" cy="80" rx="28" ry="14"></ellipse><ellipse cx="96" cy="82" rx="28" ry="14"></ellipse><ellipse cx="144" cy="80" rx="24" ry="14"></ellipse>
+                <ellipse cx="28" cy="112" rx="26" ry="15"></ellipse><ellipse cx="80" cy="114" rx="28" ry="15"></ellipse><ellipse cx="132" cy="112" rx="26" ry="15"></ellipse>
+                <ellipse cx="52" cy="142" rx="28" ry="14"></ellipse><ellipse cx="108" cy="142" rx="28" ry="14"></ellipse>
+              </g>
+              <g fill="#880e4f">
+                <ellipse cx="32" cy="28" rx="7" ry="4"></ellipse><ellipse cx="82" cy="26" rx="7" ry="4"></ellipse><ellipse cx="132" cy="28" rx="7" ry="4"></ellipse>
+                <ellipse cx="68" cy="54" rx="8" ry="5"></ellipse><ellipse cx="118" cy="52" rx="8" ry="5"></ellipse>
+                <ellipse cx="42" cy="80" rx="8" ry="5"></ellipse><ellipse cx="96" cy="82" rx="8" ry="5"></ellipse>
+                <ellipse cx="28" cy="112" rx="8" ry="5"></ellipse><ellipse cx="80" cy="114" rx="8" ry="5"></ellipse><ellipse cx="132" cy="112" rx="8" ry="5"></ellipse>
+                <ellipse cx="52" cy="142" rx="8" ry="5"></ellipse><ellipse cx="108" cy="142" rx="8" ry="5"></ellipse>
+              </g>
+            </svg>
+          </div>
+          <h3 style="font-size: 20px; font-weight: 700; color: #1c1917; margin: 0 0 4px 0;">Cheratinociti</h3>
+          <p style="font-size: 18px; color: #44403c;">Protezione e rinnovamento</p>
+        </div>
+
+        <!-- Cell 2 -->
+        <div style="flex: 1 1 0; display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <div style="width: 182px; height: 182px; border-radius: 50%; overflow: hidden; border: 4px solid #f8bbd0; margin-bottom: 16px; display: flex; align-items: center; justify-content: center; background: #f8bbd0;">
+            <svg viewBox="0 0 160 160" width="182" height="182">
+              <rect width="160" height="160" fill="#f8bbd0"></rect>
+              <g stroke="#d81b60" stroke-width="1.2" fill="#fce4ec" opacity="0.75">
+                <polygon points="10,20 60,15 70,55 20,65"></polygon>
+                <polygon points="60,15 115,10 110,55 70,55"></polygon>
+                <polygon points="115,10 155,30 145,75 110,55"></polygon>
+                <polygon points="15,105 60,95 75,145 25,150"></polygon>
+                <polygon points="95,95 145,85 150,140 100,145"></polygon>
+              </g>
+              <path d="M 80,62 C 65,42 42,22 30,26 C 45,44 58,62 64,74 C 44,78 20,84 16,92 C 38,92 56,88 68,92 C 62,112 46,134 52,144 C 66,126 76,106 84,96 C 98,114 118,136 128,132 C 114,112 100,94 96,84 C 116,74 138,62 142,50 C 120,58 102,68 90,66 C 92,46 98,24 90,16 C 84,34 82,52 80,62 Z" fill="#ad1457"></path>
+              <circle cx="80" cy="80" r="13" fill="#4a0e2e"></circle>
+            </svg>
+          </div>
+          <h3 style="font-size: 20px; font-weight: 700; color: #1c1917; margin: 0 0 4px 0;">Melanociti</h3>
+          <p style="font-size: 18px; color: #44403c;">Produzione di melanina</p>
+        </div>
+
+        <!-- Cell 3 -->
+        <div style="flex: 1 1 0; display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <div style="width: 182px; height: 182px; border-radius: 50%; overflow: hidden; border: 4px solid #f8bbd0; margin-bottom: 16px; display: flex; align-items: center; justify-content: center; background: #fce4ec;">
+            <svg viewBox="0 0 160 160" width="182" height="182">
+              <rect width="160" height="160" fill="#f8bbd0"></rect>
+              <g fill="none" stroke="#ec407a" stroke-width="3.2" opacity="0.65">
+                <path d="M -10,45 Q 50,20 110,65 T 170,50"></path>
+                <path d="M -10,80 Q 55,55 115,95 T 170,85"></path>
+                <path d="M -10,115 Q 50,90 110,130 T 170,120"></path>
+              </g>
+              <g fill="#c2185b">
+                <path d="M 18,44 Q 56,28 94,50 Q 56,60 18,44 Z"></path>
+                <path d="M 62,82 Q 102,68 142,88 Q 102,98 62,82 Z"></path>
+                <path d="M 24,116 Q 64,102 104,122 Q 64,132 24,116 Z"></path>
+              </g>
+              <g fill="#4a0e2e">
+                <ellipse cx="56" cy="45" rx="8" ry="4.5"></ellipse>
+                <ellipse cx="102" cy="83" rx="8" ry="4.5"></ellipse>
+                <ellipse cx="64" cy="117" rx="8" ry="4.5"></ellipse>
+              </g>
+            </svg>
+          </div>
+          <h3 style="font-size: 20px; font-weight: 700; color: #1c1917; margin: 0 0 4px 0;">Fibroblasti</h3>
+          <p style="font-size: 18px; color: #44403c;">Produzione di collagene ed elastina</p>
+        </div>
+
+        <!-- Cell 4 -->
+        <div style="flex: 1 1 0; display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <div style="width: 182px; height: 182px; border-radius: 50%; overflow: hidden; border: 4px solid #f8bbd0; margin-bottom: 16px; display: flex; align-items: center; justify-content: center; background: #f3c6e8;">
+            <svg viewBox="0 0 160 160" width="182" height="182">
+              <rect width="160" height="160" fill="#f3c6e8"></rect>
+              <circle cx="80" cy="80" r="64" fill="#e1bee7" opacity="0.6"></circle>
+              <path d="M 80,16 L 89,56 L 128,32 L 102,68 L 144,80 L 102,92 L 128,128 L 89,104 L 80,144 L 71,104 L 32,128 L 58,92 L 16,80 L 58,68 L 32,32 L 71,56 Z" fill="#9c27b0"></path>
+              <circle cx="80" cy="80" r="19" fill="#f3e5f5" opacity="0.45"></circle>
+              <circle cx="80" cy="80" r="11" fill="#4a148c"></circle>
+            </svg>
+          </div>
+          <h3 style="font-size: 20px; font-weight: 700; color: #1c1917; margin: 0 0 4px 0;">Cellule di Langerhans</h3>
+          <p style="font-size: 18px; color: #44403c;">Difesa immunitaria</p>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <div style="width: 40px; height: 2px; background: #d8318a;"></div>
+        <p class="header-meta" style="color: #78716c;">ANATOMIA DELLA PELLE</p>
+      </div>
+    </div>
+
+    <!-- SLIDE 07: Gli annessi cutanei -->
+    <div class="slide-container" id="slide7" style="background: #faf7f2; padding: 44px 0 0 64px;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; padding-right: 64px;">
+        <h2 class="serif-title" style="font-size: 68px; color: #171412;">
+          <span style="font-style: italic;">Gli</span> <span class="pink-italic">annessi cutanei</span>
+        </h2>
+        <p class="header-meta" style="margin-top: 8px;">MODULO 1 &nbsp;|&nbsp; FOUNDATION &nbsp;&nbsp; <strong style="color: #1c1917; font-size: 16px;">07</strong></p>
+      </div>
+
+      <div style="display: flex; width: 100%; flex-grow: 1; align-items: stretch; margin-top: 8px;">
+        <div style="width: 58%; padding-bottom: 44px; display: flex; flex-direction: column; justify-content: space-between;">
+          <p style="font-size: 18px; color: #292524; max-width: 520px; margin-bottom: 18px;">
+            Gli annessi cutanei sono strutture che si trovano nella pelle e ne potenziano le funzioni:
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 18px; margin: auto 0;">
+            <div style="display: flex; align-items: center; gap: 18px;">
+              <div style="width: 46px; height: 46px; border-radius: 50%; background: #d8318a; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 18px;">
+                <i class="fa-solid fa-feather-pointed"></i>
+              </div>
+              <div>
+                <p style="font-size: 19px; font-weight: 700; color: #1c1917;">Peli</p>
+                <p style="font-size: 18px; color: #44403c;">Protezione e sensibilità</p>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 18px;">
+              <div style="width: 46px; height: 46px; border-radius: 50%; background: #d8318a; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 18px;">
+                <i class="fa-solid fa-hand-sparkles"></i>
+              </div>
+              <div>
+                <p style="font-size: 19px; font-weight: 700; color: #1c1917;">Unghie</p>
+                <p style="font-size: 18px; color: #44403c;">Protezione delle estremità</p>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 18px;">
+              <div style="width: 46px; height: 46px; border-radius: 50%; background: #d8318a; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 18px;">
+                <i class="fa-solid fa-droplet"></i>
+              </div>
+              <div>
+                <p style="font-size: 19px; font-weight: 700; color: #1c1917;">Ghiandole sebacee</p>
+                <p style="font-size: 18px; color: #44403c;">Lubrificazione e barriera</p>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 18px;">
+              <div style="width: 46px; height: 46px; border-radius: 50%; background: #d8318a; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 18px;">
+                <i class="fa-solid fa-shower"></i>
+              </div>
+              <div>
+                <p style="font-size: 19px; font-weight: 700; color: #1c1917;">Ghiandole sudoripare</p>
+                <p style="font-size: 18px; color: #44403c;">Termoregolazione ed eliminazione di tossine</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 16px; margin-top: 18px;">
+            <div style="width: 40px; height: 2px; background: #d8318a;"></div>
+            <p class="header-meta" style="color: #78716c;">FRIDUCHAS ACADEMY</p>
+          </div>
+        </div>
+
+        <div style="width: 42%; height: 100%; padding-top: 28px; display: flex; align-items: flex-end;">
+          <div class="cut-slide7-eye" style="width: 100%; height: 100%; overflow: hidden;">
+            <img src="https://images.stockcake.com/public/c/b/2/cb23316e-de1c-451e-8f8f-693863639844_large/intense-green-gaze-stockcake.jpg" alt="Dettaglio macro ciglia e sopracciglia" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 08: Le funzioni della pelle -->
+    <div class="slide-container" id="slide8" style="background: #faf7f2; padding: 44px 64px;">
+      <div style="display: flex; justify-content: flex-end;">
+        <p class="header-meta">MODULO 1 &nbsp;|&nbsp; FOUNDATION &nbsp;&nbsp; <strong style="color: #1c1917; font-size: 16px;">08</strong></p>
+      </div>
+
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 48px; flex-grow: 1;">
+        <div style="width: 46%; display: flex; flex-direction: column; gap: 24px;">
+          <h2 class="serif-title" style="font-size: 72px; color: #171412;">
+            <span style="font-style: italic;">Le funzioni</span><br><span class="pink-italic">della pelle</span>
+          </h2>
+          <p style="font-size: 19px; color: #292524; max-width: 440px; line-height: 1.45;">
+            La pelle è un sistema complesso che lavora ogni giorno per mantenerci in salute, proteggendoci, regolandoci e permettendoci di percepire il mondo.
+          </p>
+          <p class="pink-italic" style="font-size: 36px; line-height: 1.08; margin-top: 8px;">
+            Conoscerla, amarla<br>e proteggerla sempre.
+          </p>
+        </div>
+
+        <div style="width: 54%; display: flex; align-items: center; justify-content: center;">
+          <div style="display: flex; flex-direction: column;">
+            <div style="display: flex; align-items: center; justify-content: center;">
+              <div style="width: 216px; height: 216px; border-radius: 50%; background: rgba(244, 143, 177, 0.34); border: 1.5px solid rgba(216, 49, 138, 0.25); display: flex; align-items: center; justify-content: center; margin-right: -32px; margin-bottom: -32px;">
+                <p style="font-size: 18px; font-weight: 600; color: #292524;">Protezione</p>
+              </div>
+              <div style="width: 216px; height: 216px; border-radius: 50%; background: rgba(248, 187, 208, 0.45); border: 1.5px solid rgba(216, 49, 138, 0.25); display: flex; align-items: center; justify-content: center; margin-left: -32px; margin-bottom: -32px;">
+                <p style="font-size: 18px; font-weight: 600; color: #292524;">Sensibilità</p>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: center;">
+              <div style="width: 216px; height: 216px; border-radius: 50%; background: rgba(248, 187, 208, 0.45); border: 1.5px solid rgba(216, 49, 138, 0.25); display: flex; align-items: center; justify-content: center; margin-right: -32px; margin-top: -32px;">
+                <p style="font-size: 18px; font-weight: 600; color: #292524;">Termoregolazione</p>
+              </div>
+              <div style="width: 216px; height: 216px; border-radius: 50%; background: rgba(244, 143, 177, 0.34); border: 1.5px solid rgba(216, 49, 138, 0.25); display: flex; align-items: center; justify-content: center; margin-left: -32px; margin-top: -32px;">
+                <p style="font-size: 18px; font-weight: 600; color: #292524;">Metabolismo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <div style="width: 40px; height: 2px; background: #d8318a;"></div>
+        <p class="header-meta" style="color: #78716c;">ANATOMIA DELLA PELLE</p>
+      </div>
+    </div>
+
+    <!-- SLIDE 09: La pelle è il nostro primo contatto con il mondo -->
+    <div class="slide-container" id="slide9" style="background: #0b090a; padding: 0;">
+      <div style="display: flex; width: 100%; height: 100%; align-items: stretch;">
+        <div style="width: 52%; padding: 44px 16px 44px 64px; display: flex; flex-direction: column; justify-content: space-between;">
+          <p class="header-meta" style="color: #a8a29e;">FRIDUCHAS ACADEMY</p>
+
+          <div style="margin: auto 0;">
+            <h2 class="serif-title" style="font-size: 74px; color: #fafaf9; line-height: 0.98; font-style: italic; font-weight: 500;">
+              La pelle<br>è il nostro<br>primo contatto<br>con il <span class="pink-italic" style="color: #d8318a;">mondo.</span>
+            </h2>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <p class="header-meta" style="color: #d6d3d1;">ANATOMIA DELLA PELLE</p>
+            <div style="width: 44px; height: 2.5px; background: #d8318a;"></div>
+          </div>
+        </div>
+
+        <div class="blend-photo-dark" style="width: 48%; height: 100%; overflow: hidden; background: #0b090a; display: flex;">
+          <img src="https://img.promptplum.com/cdn-cgi/image/q=78,scq=50,width=768,height=1024,fit=cover,f=auto/promptImages/cinematic-bw-woman-portrait-by-promptplum.webp" alt="Profilo donna pelle luminosa su sfondo nero" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+        </div>
+      </div>
+    </div>
+
+  hice esta prueba con gemini argon, me gustò las fuentes que usò, como ubicò los iconos, textos, titulos etc. integralas pero manteniendo nuestras imagenes, als que hemos puesto hasta ahora, atencion ala slide 5. tu hiciste el fondo muy claro, usa el mismo de este html que te paso
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-10-30T02:47:21+01:00.
+
+The user's current state is as follows:
+Active Document: g:\Proyectos DEV\Academy friduchas\scripts\render_anatomy_3d.js (LANGUAGE_UNSPECIFIED)
+Cursor is on line: 1
+Other open documents:
+- g:\Proyectos DEV\Academy friduchas\assets\img\registry.json (LANGUAGE_UNSPECIFIED)
+- g:\Proyectos DEV\Academy friduchas\public\index.html (LANGUAGE_UNSPECIFIED)
+- g:\Proyectos DEV\Academy friduchas\scripts\find_dark_model.js (LANGUAGE_UNSPECIFIED)
+- g:\Proyectos DEV\Academy friduchas\scripts\test_render.js (LANGUAGE_UNSPECIFIED)
+- g:\Proyectos DEV\Academy friduchas\content\outline.md (LANGUAGE_UNSPECIFIED)
+</ADDITIONAL_METADATA>

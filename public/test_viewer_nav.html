@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body style="margin:0; padding:0; background:#0b090b;">
+  <iframe id="f" src="http://localhost:3000" style="width:1280px; height:820px; border:none;"></iframe>
+  <script>
+    const f = document.getElementById('f');
+    f.onload = () => {
+      setTimeout(() => {
+        f.contentWindow.renderActiveSlide(8);
+      }, 500);
+    };
+  </script>
+</body>
+</html>
