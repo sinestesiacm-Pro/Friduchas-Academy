@@ -903,3 +903,4 @@ const separator = before.endsWith(',') ? '\n' : ',\n';
 const updatedJs = before + separator + newSlidesCode + '\n];\n';
 fs.writeFileSync('public/slides_data.js', updatedJs, 'utf8');
 console.log('Successfully added slides 10 through 20 to public/slides_data.js!');
+

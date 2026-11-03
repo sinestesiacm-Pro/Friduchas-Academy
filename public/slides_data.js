@@ -546,108 +546,67 @@ window.slideDefinitions = [
           </div>
         `
   },
+
   {
     num: '10',
-    cat: 'MODULO 1 | FOUNDATION 10',
+    cat: 'SLIDE 10 (REF) — PROFONDITÀ CLINICA',
     title: 'La profondità ideale del pigmento',
-    desc: 'Target biologico nel derma papillare (0.08–0.15 mm). Differenza tra impianto superficiale, target PMU e profondità eccessiva.',
+    desc: 'Target biologico nel derma papillare (0.08–0.15 mm). Confronto clinico tra impianto epidermico, target PMU e derma profondo.',
     thumb: 'img/anatomy_skin_3d_cube.png',
     refCrop: 'ref_crops/ref_slide_04.png',
     render: () => `<div class="w-full h-full bg-[#faf7f2] relative flex flex-col justify-between p-10 md:p-14 select-none overflow-hidden text-[#171412]">
             <div class="flex justify-between items-center z-20">
-              <p class="header-meta">ANATOMIA &bull; PROFONDITÀ CLINICA</p>
+              <p class="header-meta">ANATOMIA DELLA PELLE</p>
               <p class="header-meta">MODULO 1 &nbsp;|&nbsp; FOUNDATION &nbsp;&nbsp; <strong class="text-[#1c1917] text-sm">10</strong></p>
             </div>
 
-            <div class="flex w-full flex-grow items-center my-auto z-10 gap-8">
-              <!-- Left Column: 55% Content -->
-              <div class="w-[55%] flex flex-col justify-center pr-2">
+            <div class="flex w-full flex-grow items-stretch my-auto z-10">
+              <!-- Left Column (54%) -->
+              <div class="w-[54%] flex flex-col justify-center pr-6 my-auto py-2">
                 <h2 class="serif-title text-4xl md:text-5xl lg:text-[4.2rem] text-[#171412] mb-3 leading-[0.96]">
-                  La profondità <span class="pink-italic">ideale</span>
+                  La profondità<br><span class="pink-italic">ideale</span>
                 </h2>
-                <p class="text-xs md:text-sm text-[#292524] mb-5 max-w-lg leading-[1.5]">
-                  Nel PMU le frazioni di millimetro determinano il destino del pigmento. L'obiettivo biologico è alloggiare le particelle nel derma papillare senza oltrepassare la membrana basale profonda.
+                <p class="text-xs md:text-sm text-[#292524] mb-6 max-w-md leading-[1.45]">
+                  La stabilità del colore dipende dalla profondità d'impianto. Il derma papillare è l'unico distretto cutaneo che garantisce longevità senza viraggi.
                 </p>
 
-                <!-- 3 Depth Tiers Cards -->
-                <div class="flex flex-col space-y-3 max-w-lg">
-                  <!-- Tier 1 -->
-                  <div class="bg-white/90 border border-[#e7e5e4] rounded-xl p-3 shadow-sm flex items-start space-x-3.5">
-                    <div class="w-7 h-7 rounded-full bg-[#f3f4f6] text-[#78716c] flex items-center justify-center flex-shrink-0 text-xs font-bold">
+                <!-- 3 Editorial Feature Rows with solid Magenta Circle Badges -->
+                <div class="flex flex-col space-y-4 max-w-md">
+                  <div class="flex items-center space-x-3.5">
+                    <div class="w-8 h-8 rounded-full bg-[#f48fb1] text-white flex items-center justify-center flex-shrink-0 text-xs shadow-sm">
                       <i class="fa-solid fa-arrow-up"></i>
                     </div>
                     <div>
-                      <div class="flex items-center space-x-2 mb-0.5">
-                        <h4 class="text-xs font-bold text-[#1c1917] uppercase tracking-wide">Troppo Superficiale &bull; Epidermide</h4>
-                        <span class="text-[10px] font-semibold text-[#a8a29e]">&lt; 0.05 mm</span>
-                      </div>
-                      <p class="text-[11px] text-[#57534e] leading-snug">Espulsione rapida con il fisiologico turnover cellulare (28 giorni). Il colore svanisce precocemente e a chiazze.</p>
+                      <h4 class="text-sm font-bold text-[#1c1917]">Superficiale &bull; Epidermide (&lt; 0.05 mm)</h4>
+                      <p class="text-xs text-[#57534e]">Espulsione rapida col turnover cellulare (scomparsa in 28gg)</p>
                     </div>
                   </div>
 
-                  <!-- Tier 2 (Target) -->
-                  <div class="bg-gradient-to-r from-[#fdf2f8] to-white border-2 border-[#d8318a] rounded-xl p-3.5 shadow-md flex items-start space-x-3.5 relative overflow-hidden">
-                    <div class="w-7 h-7 rounded-full bg-[#d8318a] text-white flex items-center justify-center flex-shrink-0 text-xs font-bold shadow">
-                      <i class="fa-solid fa-check"></i>
+                  <div class="flex items-center space-x-3.5">
+                    <div class="w-8 h-8 rounded-full bg-[#d8318a] text-white flex items-center justify-center flex-shrink-0 text-xs shadow-sm">
+                      <i class="fa-solid fa-bullseye"></i>
                     </div>
                     <div>
-                      <div class="flex items-center space-x-2 mb-0.5">
-                        <h4 class="text-xs font-extrabold text-[#d8318a] uppercase tracking-wide">Target Aureo PMU &bull; Derma Papillare</h4>
-                        <span class="text-[10px] font-bold text-[#d8318a]">0.08 – 0.15 mm</span>
-                      </div>
-                      <p class="text-[11px] text-[#1c1917] font-medium leading-snug">Stabilità cromatica, minima reazione flogistica, ottima ritenzione del pixel e degradazione progressiva senza viraggi.</p>
+                      <h4 class="text-sm font-bold text-[#1c1917]">Target PMU &bull; Derma Papillare (0.08 – 0.15 mm)</h4>
+                      <p class="text-xs text-[#57534e]">Stabilità cromatica, pixel trasparente e degradazione graduale</p>
                     </div>
                   </div>
 
-                  <!-- Tier 3 -->
-                  <div class="bg-white/90 border border-[#e7e5e4] rounded-xl p-3 shadow-sm flex items-start space-x-3.5">
-                    <div class="w-7 h-7 rounded-full bg-[#fee2e2] text-[#ef4444] flex items-center justify-center flex-shrink-0 text-xs font-bold">
-                      <i class="fa-solid fa-arrow-down"></i>
+                  <div class="flex items-center space-x-3.5">
+                    <div class="w-8 h-8 rounded-full bg-[#171412] text-white flex items-center justify-center flex-shrink-0 text-xs shadow-sm">
+                      <i class="fa-solid fa-triangle-exclamation"></i>
                     </div>
                     <div>
-                      <div class="flex items-center space-x-2 mb-0.5">
-                        <h4 class="text-xs font-bold text-[#1c1917] uppercase tracking-wide">Troppo Profondo &bull; Derma Reticolare</h4>
-                        <span class="text-[10px] font-semibold text-[#a8a29e]">&gt; 0.40 mm</span>
-                      </div>
-                      <p class="text-[11px] text-[#57534e] leading-snug">Viraggio grigio/bluastro (Effetto Tyndall), migrazione laterale dell'inchiostro (*blow-out*) e micro-cicatrizzazione.</p>
+                      <h4 class="text-sm font-bold text-[#1c1917]">Profondo &bull; Ipoderma / Reticolare (&gt; 0.40 mm)</h4>
+                      <p class="text-xs text-[#57534e]">Viraggio a grigio/blu (Effetto Tyndall) e allargamento irreversibile</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- Right Column: 45% Histological Diagram -->
-              <div class="w-[45%] flex items-center justify-center">
-                <div class="w-full max-w-md bg-white p-6 rounded-2xl border border-[#e7e5e4] shadow-xl relative">
-                  <div class="flex justify-between items-center mb-4">
-                    <h4 class="serif-title text-xl text-[#171412]">Sezione Istologica dell'Impianto</h4>
-                    <span class="text-[10px] uppercase tracking-widest text-[#d8318a] font-bold">Micro-Target</span>
-                  </div>
-                  
-                  <div class="w-full h-52 relative rounded-xl overflow-hidden border border-[#e7e5e4] flex flex-col">
-                    <!-- Layer 1: Epidermide -->
-                    <div class="h-[25%] bg-[#ffe4e6] border-b border-[#fda4af] flex items-center justify-between px-4">
-                      <span class="text-[10px] font-bold text-[#9f1239] uppercase tracking-wider">Epidermide (0.05 mm)</span>
-                      <span class="text-[9px] text-[#be123c] font-medium">Turnover continuo</span>
-                    </div>
-                    <!-- Layer 2: Derma Papillare -->
-                    <div class="h-[38%] bg-[#fdf2f8] border-b-2 border-dashed border-[#d8318a] flex items-center justify-between px-4 relative">
-                      <div class="flex items-center space-x-2">
-                        <span class="w-2.5 h-2.5 rounded-full bg-[#d8318a]"></span>
-                        <span class="text-[11px] font-extrabold text-[#831843] uppercase tracking-wider">Derma Papillare</span>
-                      </div>
-                      <span class="px-2 py-0.5 rounded bg-[#d8318a] text-white text-[9px] font-bold uppercase tracking-wider">Target PMU</span>
-                    </div>
-                    <!-- Layer 3: Derma Reticolare -->
-                    <div class="h-[37%] bg-[#f5f5f4] flex items-center justify-between px-4">
-                      <span class="text-[10px] font-bold text-[#57534e] uppercase tracking-wider">Derma Reticolare / Ipoderma</span>
-                      <span class="text-[9px] text-[#dc2626] font-semibold">Zona a rischio</span>
-                    </div>
-                  </div>
-
-                  <p class="text-[11px] text-center text-[#78716c] mt-3.5 italic leading-tight">
-                    «Una mano leggera e la giusta angolazione a 90° garantiscono che l'ago sfiori il derma senza violarlo.»
-                  </p>
-                </div>
+              <!-- Right Column (46%) with Organic Cutout and 3D Cube -->
+              <div class="w-[46%] h-full relative overflow-hidden cut-slide3-pink shadow-2xl flex items-center justify-center bg-[#fdf2f8]">
+                <img src="img/slide03_clean_model.jpg" class="w-full h-full object-cover object-top scale-105" alt="Modella profilo beauty">
               </div>
             </div>
 
@@ -660,102 +619,75 @@ window.slideDefinitions = [
 
   {
     num: '11',
-    cat: 'SLIDE 11 (REF) — PROCESSO DI GUARIGIONE',
+    cat: 'SLIDE 11 (REF) — CICLO DI GUARIGIONE',
     title: 'Il ciclo di guarigione della pelle',
-    desc: 'Le 4 fasi biologiche del post-trattamento (G1-3 Ossidazione, G4-7 Desquamazione, G8-14 Ghost Phase, G28 Stabilizzazione).',
+    desc: '4 dischi temporali con cornice rosa (#f48fb1): Ossidazione, Desquamazione, Ghost Phase e Stabilizzazione a 28 giorni.',
     thumb: 'img/diagram_healing_cycle.png',
-    refCrop: 'ref_crops/ref_slide_01.png',
-    render: () => `<div class="w-full h-full bg-[#faf7f2] relative flex flex-col justify-between p-10 md:p-14 select-none overflow-hidden text-[#171412]">
-            <div class="flex justify-between items-center z-20">
-              <p class="header-meta">FISIOLOGIA &bull; PROCESSO CLINICO</p>
-              <p class="header-meta">MODULO 1 &nbsp;|&nbsp; FOUNDATION &nbsp;&nbsp; <strong class="text-[#1c1917] text-sm">11</strong></p>
-            </div>
-
-            <div class="flex w-full flex-grow flex-col justify-center my-auto z-10 py-2">
-              <div class="mb-5 max-w-2xl">
-                <h2 class="serif-title text-4xl md:text-5xl lg:text-[4rem] text-[#171412] mb-2 leading-[0.96]">
-                  Il ciclo di <span class="pink-italic">guarigione</span>
+    refCrop: 'ref_crops/ref_slide_06.png',
+    render: () => `<div class="w-full h-full bg-[#faf7f2] relative flex flex-col justify-between p-8 md:p-12 select-none overflow-hidden text-[#171412]">
+            <!-- Header -->
+            <div class="flex justify-between items-start z-20">
+              <div>
+                <h2 class="serif-title text-4xl md:text-5xl lg:text-[4.2rem] text-[#171412] mb-2 leading-[0.96]">
+                  Il ciclo di<br><span class="pink-italic">guarigione</span>
                 </h2>
-                <p class="text-xs md:text-sm text-[#292524] leading-[1.45]">
-                  La rigenerazione tissutale richiede 28 giorni. Informare la cliente su queste 4 fasi evita ansie ingiustificate durante il naturale schiarimento del colore.
+                <p class="text-xs md:text-sm text-[#292524] max-w-lg leading-[1.45]">
+                  La rigenerazione epidermica dura 28 giorni. Conoscere le 4 tappe biologiche elimina ansie e guida la corretta cura domiciliare.
                 </p>
               </div>
-
-              <!-- 4 Sequential Phase Cards -->
-              <div class="grid grid-cols-4 gap-4 w-full">
-                <!-- Phase 1 -->
-                <div class="bg-white p-4 rounded-xl border border-[#e7e5e4] shadow-sm flex flex-col justify-between">
-                  <div>
-                    <div class="flex justify-between items-center mb-2">
-                      <span class="text-[11px] font-bold text-[#d8318a] uppercase tracking-wider">FASE 01</span>
-                      <span class="text-[10px] font-semibold text-[#78716c]">Giorno 1 – 3</span>
-                    </div>
-                    <h4 class="text-sm font-bold text-[#1c1917] mb-1.5">Micro-trauma & Ossidazione</h4>
-                    <p class="text-[11px] text-[#57534e] leading-relaxed">
-                      Il colore appare più scuro del 30–40% per l'ossidazione superficiale del pigmento e l'iperemia locale.
-                    </p>
-                  </div>
-                  <div class="mt-3 pt-2 border-t border-[#f5f5f4] text-[10px] text-[#d8318a] font-medium">
-                    &bull; Lieve edema &bull; Colore intenso
-                  </div>
-                </div>
-
-                <!-- Phase 2 -->
-                <div class="bg-white p-4 rounded-xl border border-[#e7e5e4] shadow-sm flex flex-col justify-between">
-                  <div>
-                    <div class="flex justify-between items-center mb-2">
-                      <span class="text-[11px] font-bold text-[#d8318a] uppercase tracking-wider">FASE 02</span>
-                      <span class="text-[10px] font-semibold text-[#78716c]">Giorno 4 – 7</span>
-                    </div>
-                    <h4 class="text-sm font-bold text-[#1c1917] mb-1.5">Desquamazione</h4>
-                    <p class="text-[11px] text-[#57534e] leading-relaxed">
-                      Formazione e distacco spontaneo di micro-crosticine. È severamente vietato grattare o asportare le pellicine.
-                    </p>
-                  </div>
-                  <div class="mt-3 pt-2 border-t border-[#f5f5f4] text-[10px] text-[#e11d48] font-medium">
-                    &bull; Divieto di strappo &bull; Idratazione
-                  </div>
-                </div>
-
-                <!-- Phase 3 -->
-                <div class="bg-white p-4 rounded-xl border border-[#e7e5e4] shadow-sm flex flex-col justify-between">
-                  <div>
-                    <div class="flex justify-between items-center mb-2">
-                      <span class="text-[11px] font-bold text-[#d8318a] uppercase tracking-wider">FASE 03</span>
-                      <span class="text-[10px] font-semibold text-[#78716c]">Giorno 8 – 14</span>
-                    </div>
-                    <h4 class="text-sm font-bold text-[#1c1917] mb-1.5">Ghost Phase (Schiarimento)</h4>
-                    <p class="text-[11px] text-[#57534e] leading-relaxed">
-                      Il pigmento sembra "sparito". Il nuovo strato corneo è lattiginoso e opaco, nascondendo il derma sottostante.
-                    </p>
-                  </div>
-                  <div class="mt-3 pt-2 border-t border-[#f5f5f4] text-[10px] text-[#78716c] font-medium">
-                    &bull; Velo opaco &bull; Nessun panico
-                  </div>
-                </div>
-
-                <!-- Phase 4 -->
-                <div class="bg-gradient-to-b from-white to-[#fdf2f8] p-4 rounded-xl border-2 border-[#d8318a] shadow-md flex flex-col justify-between">
-                  <div>
-                    <div class="flex justify-between items-center mb-2">
-                      <span class="text-[11px] font-extrabold text-[#d8318a] uppercase tracking-wider">FASE 04</span>
-                      <span class="text-[10px] font-bold text-[#d8318a]">Giorno 28</span>
-                    </div>
-                    <h4 class="text-sm font-bold text-[#1c1917] mb-1.5">Stabilizzazione Definitiva</h4>
-                    <p class="text-[11px] text-[#57534e] leading-relaxed">
-                      La cute ritrova la trasparenza ottica. Il tono reale riemerge: momento ideale per valutare il ritocco (touch-up).
-                    </p>
-                  </div>
-                  <div class="mt-3 pt-2 border-t border-[#fce7f3] text-[10px] text-[#d8318a] font-bold">
-                    &bull; Risultato reale &bull; Seduta di ritocco
-                  </div>
-                </div>
+              <div class="flex flex-col items-end">
+                <p class="header-meta">FISIOLOGIA DELLA PELLE</p>
+                <p class="header-meta">MODULO 1 &nbsp;|&nbsp; FOUNDATION &nbsp;&nbsp; <strong class="text-[#1c1917] text-sm">11</strong></p>
               </div>
             </div>
 
+            <!-- 4 Circular Stage Discs identical to Slide 06 aesthetic -->
+            <div class="grid grid-cols-4 gap-6 w-full my-auto z-10 px-2">
+              <!-- Disc 1 -->
+              <div class="flex flex-col items-center text-center">
+                <div class="w-32 h-32 md:w-36 md:h-36 rounded-full border-[3px] border-[#f48fb1] p-1.5 shadow-md bg-white flex flex-col items-center justify-center relative overflow-hidden group">
+                  <span class="text-3xl font-normal serif-title text-[#d8318a]">01</span>
+                  <span class="text-[10px] uppercase font-bold tracking-widest text-[#78716c] mt-0.5">Giorni 1–3</span>
+                </div>
+                <h4 class="serif-title text-lg md:text-xl text-[#171412] mt-3">Ossidazione</h4>
+                <p class="text-[11px] md:text-xs text-[#57534e] max-w-[170px] leading-snug mt-1">Colore scuro e intenso, lieve edema fisiologico.</p>
+              </div>
+
+              <!-- Disc 2 -->
+              <div class="flex flex-col items-center text-center">
+                <div class="w-32 h-32 md:w-36 md:h-36 rounded-full border-[3px] border-[#f48fb1] p-1.5 shadow-md bg-white flex flex-col items-center justify-center relative overflow-hidden group">
+                  <span class="text-3xl font-normal serif-title text-[#d8318a]">02</span>
+                  <span class="text-[10px] uppercase font-bold tracking-widest text-[#78716c] mt-0.5">Giorni 4–7</span>
+                </div>
+                <h4 class="serif-title text-lg md:text-xl text-[#171412] mt-3">Desquamazione</h4>
+                <p class="text-[11px] md:text-xs text-[#57534e] max-w-[170px] leading-snug mt-1">Distacco spontaneo delle pellicine: divieto di strappo.</p>
+              </div>
+
+              <!-- Disc 3 -->
+              <div class="flex flex-col items-center text-center">
+                <div class="w-32 h-32 md:w-36 md:h-36 rounded-full border-[3px] border-[#f48fb1] p-1.5 shadow-md bg-white flex flex-col items-center justify-center relative overflow-hidden group">
+                  <span class="text-3xl font-normal serif-title text-[#d8318a]">03</span>
+                  <span class="text-[10px] uppercase font-bold tracking-widest text-[#78716c] mt-0.5">Giorni 8–14</span>
+                </div>
+                <h4 class="serif-title text-lg md:text-xl text-[#171412] mt-3">Ghost Phase</h4>
+                <p class="text-[11px] md:text-xs text-[#57534e] max-w-[170px] leading-snug mt-1">Il nuovo strato corneo opacizza: il colore sembra sparito.</p>
+              </div>
+
+              <!-- Disc 4 -->
+              <div class="flex flex-col items-center text-center">
+                <div class="w-32 h-32 md:w-36 md:h-36 rounded-full border-[3px] border-[#d8318a] p-1.5 shadow-md bg-[#fdf2f8] flex flex-col items-center justify-center relative overflow-hidden group">
+                  <span class="text-3xl font-normal serif-title text-[#d8318a]">04</span>
+                  <span class="text-[10px] uppercase font-bold tracking-widest text-[#d8318a] mt-0.5">Giorno 28</span>
+                </div>
+                <h4 class="serif-title text-lg md:text-xl text-[#171412] mt-3">Stabilizzazione</h4>
+                <p class="text-[11px] md:text-xs text-[#57534e] max-w-[170px] leading-snug mt-1">Riemersione del tono reale: momento per il ritocco.</p>
+              </div>
+            </div>
+
+            <!-- Footer -->
             <div class="flex items-center space-x-3 z-20">
               <div class="w-10 h-[2px] bg-[#d8318a]"></div>
-              <p class="header-meta text-[#78716c]">FISIOLOGIA DELLA GUARIGIONE</p>
+              <p class="header-meta text-[#78716c]">FISIOLOGIA DELLA PELLE</p>
             </div>
           </div>`
   },
@@ -764,92 +696,86 @@ window.slideDefinitions = [
     num: '12',
     cat: 'SLIDE 12 (REF) — FITZPATRICK SCALE',
     title: 'I fototipi di Fitzpatrick',
-    desc: 'Classificazione dermatologica della concentrazione di melanina e risposta ai raggi UV (Fototipi I–VI).',
-    thumb: 'img/sample_texture.jpg',
-    refCrop: 'ref_crops/ref_slide_03.png',
+    desc: 'Classificazione dermatologica della melanina (I–VI) con modella beauty e campioni colore incarnato.',
+    thumb: 'img/ai_cover_model.jpg',
+    refCrop: 'ref_crops/ref_slide_01.png',
     render: () => `<div class="w-full h-full bg-[#faf7f2] relative flex flex-col justify-between p-10 md:p-14 select-none overflow-hidden text-[#171412]">
             <div class="flex justify-between items-center z-20">
-              <p class="header-meta">DERMATOLOGIA &bull; CLASSIFICAZIONE</p>
+              <p class="header-meta">ANALISI DELLA PELLE</p>
               <p class="header-meta">MODULO 1 &nbsp;|&nbsp; FOUNDATION &nbsp;&nbsp; <strong class="text-[#1c1917] text-sm">12</strong></p>
             </div>
 
-            <div class="flex w-full flex-grow flex-col justify-center my-auto z-10 py-1">
-              <div class="mb-4">
-                <h2 class="serif-title text-4xl md:text-5xl lg:text-[4rem] text-[#171412] mb-2 leading-[0.96]">
-                  I fototipi di <span class="pink-italic">Fitzpatrick</span>
+            <div class="flex w-full flex-grow items-stretch my-auto z-10">
+              <!-- Left Column (54%) -->
+              <div class="w-[54%] flex flex-col justify-center pr-6 my-auto py-2">
+                <h2 class="serif-title text-4xl md:text-5xl lg:text-[4.2rem] text-[#171412] mb-3 leading-[0.96]">
+                  I fototipi di<br><span class="pink-italic">Fitzpatrick</span>
                 </h2>
-                <p class="text-xs md:text-sm text-[#292524] max-w-xl leading-[1.45]">
-                  La concentrazione di feomelanina ed eumelanina definisce la tolleranza al sole e influenza l'interazione ottica con il pigmento impiantato.
+                <p class="text-xs md:text-sm text-[#292524] mb-5 max-w-md leading-[1.45]">
+                  La concentrazione di feomelanina ed eumelanina determina la tolleranza solare e agisce come filtro ottico sul pigmento guarito.
                 </p>
+
+                <!-- 6 Minimalist Tone Chips -->
+                <div class="grid grid-cols-2 gap-x-4 gap-y-3 max-w-md">
+                  <div class="flex items-center space-x-3">
+                    <span class="w-7 h-7 rounded-full bg-[#fde8e8] border border-[#fca5a5] flex items-center justify-center text-[10px] font-bold text-[#991b1b]">I</span>
+                    <div>
+                      <h5 class="text-xs font-bold text-[#1c1917]">Celtico</h5>
+                      <p class="text-[10px] text-[#57534e]">Efelidi, zero abbronzatura. Usare toni caldi.</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center space-x-3">
+                    <span class="w-7 h-7 rounded-full bg-[#fef3c7] border border-[#fde68a] flex items-center justify-center text-[10px] font-bold text-[#92400e]">II</span>
+                    <div>
+                      <h5 class="text-xs font-bold text-[#1c1917]">Nordico</h5>
+                      <p class="text-[10px] text-[#57534e]">Capelli chiari, occhi chiari. Base neutro-calda.</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center space-x-3">
+                    <span class="w-7 h-7 rounded-full bg-[#fed7aa] border border-[#fdba74] flex items-center justify-center text-[10px] font-bold text-[#9a3412]">III</span>
+                    <div>
+                      <h5 class="text-xs font-bold text-[#1c1917]">Mediterraneo</h5>
+                      <p class="text-[10px] text-[#57534e]">Carnagione media, massima versatilità.</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center space-x-3">
+                    <span class="w-7 h-7 rounded-full bg-[#e0e7ff] border border-[#a5b4fc] flex items-center justify-center text-[10px] font-bold text-[#3730a3]">IV</span>
+                    <div>
+                      <h5 class="text-xs font-bold text-[#1c1917]">Olivastro</h5>
+                      <p class="text-[10px] text-[#57534e]">Sottotono freddo: aggiungere correttivo caldo.</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center space-x-3">
+                    <span class="w-7 h-7 rounded-full bg-[#d7b49e] border border-[#b08968] flex items-center justify-center text-[10px] font-bold text-[#43281c]">V</span>
+                    <div>
+                      <h5 class="text-xs font-bold text-[#1c1917]">Mediorientale</h5>
+                      <p class="text-[10px] text-[#57534e]">Pelle scura: rischio viraggio a cenere.</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center space-x-3">
+                    <span class="w-7 h-7 rounded-full bg-[#3d2b24] border border-[#211510] flex items-center justify-center text-[10px] font-bold text-white">VI</span>
+                    <div>
+                      <h5 class="text-xs font-bold text-[#1c1917]">Ebano</h5>
+                      <p class="text-[10px] text-[#57534e]">Attenzione a iperpigmentazione e traumi.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <!-- 6 Fitzpatrick Cards Grid -->
-              <div class="grid grid-cols-3 gap-3.5 w-full max-w-5xl">
-                <!-- Fototipo I -->
-                <div class="bg-white p-3.5 rounded-xl border border-[#e7e5e4] shadow-sm flex items-start space-x-3">
-                  <div class="w-8 h-8 rounded-full bg-[#fef2f2] border-2 border-[#fca5a5] flex items-center justify-center flex-shrink-0 text-xs font-bold text-[#991b1b]">I</div>
-                  <div>
-                    <h4 class="text-xs font-bold text-[#1c1917]">Celtico / Molto Chiaro</h4>
-                    <p class="text-[10px] text-[#78716c] mb-1">Capelli rossi/biondi, efelidi, si scotta sempre.</p>
-                    <span class="text-[9px] font-semibold text-[#d8318a]">&bull; Usare toni biondo-caldi, zero cenere</span>
-                  </div>
-                </div>
-
-                <!-- Fototipo II -->
-                <div class="bg-white p-3.5 rounded-xl border border-[#e7e5e4] shadow-sm flex items-start space-x-3">
-                  <div class="w-8 h-8 rounded-full bg-[#fffbeb] border-2 border-[#fde68a] flex items-center justify-center flex-shrink-0 text-xs font-bold text-[#92400e]">II</div>
-                  <div>
-                    <h4 class="text-xs font-bold text-[#1c1917]">Nordico / Chiaro</h4>
-                    <p class="text-[10px] text-[#78716c] mb-1">Capelli biondi/castani chiari, occhi azzurri/verdi.</p>
-                    <span class="text-[9px] font-semibold text-[#d8318a]">&bull; Pigmenti neutro-caldi bilanciati</span>
-                  </div>
-                </div>
-
-                <!-- Fototipo III -->
-                <div class="bg-white p-3.5 rounded-xl border border-[#e7e5e4] shadow-sm flex items-start space-x-3">
-                  <div class="w-8 h-8 rounded-full bg-[#fef3c7] border-2 border-[#fbbf24] flex items-center justify-center flex-shrink-0 text-xs font-bold text-[#78350f]">III</div>
-                  <div>
-                    <h4 class="text-xs font-bold text-[#1c1917]">Mediterraneo Chiaro</h4>
-                    <p class="text-[10px] text-[#78716c] mb-1">Carnagione media, castano, abbronzatura graduale.</p>
-                    <span class="text-[9px] font-semibold text-[#d8318a]">&bull; Massima versatilità cromatica</span>
-                  </div>
-                </div>
-
-                <!-- Fototipo IV -->
-                <div class="bg-white p-3.5 rounded-xl border border-[#e7e5e4] shadow-sm flex items-start space-x-3">
-                  <div class="w-8 h-8 rounded-full bg-[#e0e7ff] border-2 border-[#a5b4fc] flex items-center justify-center flex-shrink-0 text-xs font-bold text-[#3730a3]">IV</div>
-                  <div>
-                    <h4 class="text-xs font-bold text-[#1c1917]">Mediterraneo Olivastro</h4>
-                    <p class="text-[10px] text-[#78716c] mb-1">Pelle olivastra, occhi e capelli scuri. Si scotta raramente.</p>
-                    <span class="text-[9px] font-semibold text-[#d8318a]">&bull; Aggiungere goccia calda antiriflesso</span>
-                  </div>
-                </div>
-
-                <!-- Fototipo V -->
-                <div class="bg-white p-3.5 rounded-xl border border-[#e7e5e4] shadow-sm flex items-start space-x-3">
-                  <div class="w-8 h-8 rounded-full bg-[#f5ebe6] border-2 border-[#d7b49e] flex items-center justify-center flex-shrink-0 text-xs font-bold text-[#5c3826]">V</div>
-                  <div>
-                    <h4 class="text-xs font-bold text-[#1c1917]">Mediorientale / Latino</h4>
-                    <p class="text-[10px] text-[#78716c] mb-1">Pelle scura naturale, alta concentrazione di melanina.</p>
-                    <span class="text-[9px] font-semibold text-[#d8318a]">&bull; Rischio viraggi a freddo; correttivo caldo</span>
-                  </div>
-                </div>
-
-                <!-- Fototipo VI -->
-                <div class="bg-white p-3.5 rounded-xl border border-[#e7e5e4] shadow-sm flex items-start space-x-3">
-                  <div class="w-8 h-8 rounded-full bg-[#3d2b24] border-2 border-[#1c130e] flex items-center justify-center flex-shrink-0 text-xs font-bold text-white">VI</div>
-                  <div>
-                    <h4 class="text-xs font-bold text-[#1c1917]">Ebano / Molto Scuro</h4>
-                    <p class="text-[10px] text-[#78716c] mb-1">Pelle nera, ricca di eumelanina densa. Non si scotta mai.</p>
-                    <span class="text-[9px] font-semibold text-[#d8318a]">&bull; Monitorare rischio cheloidi / macchie</span>
-                  </div>
-                </div>
+              <!-- Right Column (46%) Model Cutout -->
+              <div class="w-[46%] h-full relative overflow-hidden cut-slide1-pink shadow-2xl">
+                <img src="img/slide01_model_layer.png" class="w-full h-full object-cover object-top" alt="Modella Fototipi">
               </div>
             </div>
 
             <div class="flex items-center space-x-3 z-20">
               <div class="w-10 h-[2px] bg-[#d8318a]"></div>
-              <p class="header-meta text-[#78716c]">ANALISI DEL FOTOTIPO</p>
+              <p class="header-meta text-[#78716c]">ANALISI DELLA PELLE</p>
             </div>
           </div>`
   },
@@ -858,78 +784,61 @@ window.slideDefinitions = [
     num: '13',
     cat: 'SLIDE 13 (REF) — TIPOLOGIE CUTANEE',
     title: 'Tipologie cutanee & tecnica',
-    desc: 'Come produzione sebacea, spessore ed elasticità determinano la scelta tra Hair Stroke (pelo) e Powder Brows (sfumatura).',
-    thumb: 'img/slide03_clean_model.jpg',
-    refCrop: 'ref_crops/ref_slide_03.png',
+    desc: '4 colonne editoriali pulite con numeri Playfair Display e raccomandazione tecnica d\'elezione.',
+    thumb: 'img/texture_swatch.jpg',
+    refCrop: 'ref_crops/ref_slide_02.png',
     render: () => `<div class="w-full h-full bg-[#faf7f2] relative flex flex-col justify-between p-10 md:p-14 select-none overflow-hidden text-[#171412]">
             <div class="flex justify-between items-center z-20">
-              <p class="header-meta">ANALISI CLINICA &bull; SCELTA DELLA TECNICA</p>
+              <p class="header-meta">DIAGNOSI CLINICA</p>
               <p class="header-meta">MODULO 1 &nbsp;|&nbsp; FOUNDATION &nbsp;&nbsp; <strong class="text-[#1c1917] text-sm">13</strong></p>
             </div>
 
-            <div class="flex w-full flex-grow flex-col justify-center my-auto z-10 py-1">
-              <div class="mb-4">
-                <h2 class="serif-title text-4xl md:text-5xl lg:text-[4rem] text-[#171412] mb-2 leading-[0.96]">
-                  Tipologia di pelle & <span class="pink-italic">tecnica d'elezione</span>
+            <div class="flex w-full flex-grow items-stretch my-auto z-10">
+              <!-- Left Column: 56% -->
+              <div class="w-[56%] flex flex-col justify-center pr-6 my-auto py-2">
+                <h2 class="serif-title text-4xl md:text-5xl lg:text-[4.2rem] text-[#171412] mb-5 leading-[0.96]">
+                  Tipologia di pelle &<br><span class="pink-italic">tecnica d'elezione</span>
                 </h2>
-                <p class="text-xs md:text-sm text-[#292524] max-w-xl leading-[1.45]">
-                  Non tutte le pelli possono ricevere la stessa tecnica. Forzare un pelo iperrealistico su una cute inadatta produce risultati sgranati e allargati.
-                </p>
+
+                <!-- 4 Rows with Large Editorial Numerals (As in Slide 02) -->
+                <div class="flex flex-col space-y-3.5">
+                  <div class="flex items-start space-x-4">
+                    <span class="text-xl md:text-2xl font-semibold text-[#c0568f] min-w-[32px]">01</span>
+                    <div>
+                      <h4 class="text-sm font-bold text-[#1c1917]">Pelle Normale / Mista</h4>
+                      <p class="text-xs text-[#57534e]">Ideale per ogni tecnica: pelo a pelo (Hair Stroke), Powder e Combo.</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start space-x-4">
+                    <span class="text-xl md:text-2xl font-semibold text-[#c0568f] min-w-[32px]">02</span>
+                    <div>
+                      <h4 class="text-sm font-bold text-[#1c1917]">Pelle Grassa & Pori Dilatati</h4>
+                      <p class="text-xs text-[#57534e]">Il sebo allarga il pelo: <strong>scelta d'elezione Powder Brows (Pixel)</strong>.</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start space-x-4">
+                    <span class="text-xl md:text-2xl font-semibold text-[#c0568f] min-w-[32px]">03</span>
+                    <div>
+                      <h4 class="text-sm font-bold text-[#1c1917]">Pelle Sottile & Sensibile</h4>
+                      <p class="text-xs text-[#57534e]">Capillari reattivi: richiede aghi nano 0.25 mm e pressione piuma.</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start space-x-4">
+                    <span class="text-xl md:text-2xl font-semibold text-[#c0568f] min-w-[32px]">04</span>
+                    <div>
+                      <h4 class="text-sm font-bold text-[#1c1917]">Pelle Matura & Atrofica</h4>
+                      <p class="text-xs text-[#57534e]">Minore elasticità: vietati passaggi ripetuti; optare per sfumatura soft.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <!-- 4 Skin Type Column Table -->
-              <div class="grid grid-cols-4 gap-4 w-full">
-                <!-- Col 1: Normale / Mista -->
-                <div class="bg-white p-4 rounded-xl border border-[#e7e5e4] shadow-sm flex flex-col justify-between">
-                  <div>
-                    <span class="px-2 py-0.5 rounded bg-[#fce7f3] text-[#d8318a] text-[10px] font-bold uppercase tracking-wider">Ideale</span>
-                    <h4 class="text-sm font-bold text-[#1c1917] mt-2 mb-1">Normale / Mista Secca</h4>
-                    <p class="text-[11px] text-[#57534e] leading-relaxed mb-3">Trama cutanea fine, pori poco visibili, produzione sebacea equilibrata.</p>
-                  </div>
-                  <div class="bg-[#faf7f2] p-2.5 rounded-lg border border-[#e7e5e4]">
-                    <span class="text-[10px] font-bold text-[#1c1917] block mb-0.5">TECNICA RACCOMANDATA:</span>
-                    <span class="text-[11px] text-[#d8318a] font-semibold">Hair Stroke &bull; Combo &bull; Powder</span>
-                  </div>
-                </div>
-
-                <!-- Col 2: Grassa / Pori dilatati -->
-                <div class="bg-white p-4 rounded-xl border-2 border-[#d8318a] shadow-md flex flex-col justify-between">
-                  <div>
-                    <span class="px-2 py-0.5 rounded bg-[#d8318a] text-white text-[10px] font-bold uppercase tracking-wider">Attenzione</span>
-                    <h4 class="text-sm font-bold text-[#1c1917] mt-2 mb-1">Grassa & Pori Dilatati</h4>
-                    <p class="text-[11px] text-[#57534e] leading-relaxed mb-3">Sebo fluido continuo. Il pelo singolo tende ad allargarsi e sgranarsi nel tempo.</p>
-                  </div>
-                  <div class="bg-[#fdf2f8] p-2.5 rounded-lg border border-[#fbcfe8]">
-                    <span class="text-[10px] font-bold text-[#831843] block mb-0.5">TECNICA RACCOMANDATA:</span>
-                    <span class="text-[11px] text-[#d8318a] font-bold">Powder Brows (Pixel Sfumato)</span>
-                  </div>
-                </div>
-
-                <!-- Col 3: Sensibile -->
-                <div class="bg-white p-4 rounded-xl border border-[#e7e5e4] shadow-sm flex flex-col justify-between">
-                  <div>
-                    <span class="px-2 py-0.5 rounded bg-[#fef2f2] text-[#ef4444] text-[10px] font-bold uppercase tracking-wider">Reattiva</span>
-                    <h4 class="text-sm font-bold text-[#1c1917] mt-2 mb-1">Sottile & Sensibile</h4>
-                    <p class="text-[11px] text-[#57534e] leading-relaxed mb-3">Capillari superficiali, tendenza al rossore immediato ed edema.</p>
-                  </div>
-                  <div class="bg-[#faf7f2] p-2.5 rounded-lg border border-[#e7e5e4]">
-                    <span class="text-[10px] font-bold text-[#1c1917] block mb-0.5">TECNICA RACCOMANDATA:</span>
-                    <span class="text-[11px] text-[#d8318a] font-semibold">Mano piuma &bull; Aghi 0.25 mm nano</span>
-                  </div>
-                </div>
-
-                <!-- Col 4: Matura -->
-                <div class="bg-white p-4 rounded-xl border border-[#e7e5e4] shadow-sm flex flex-col justify-between">
-                  <div>
-                    <span class="px-2 py-0.5 rounded bg-[#f3f4f6] text-[#78716c] text-[10px] font-bold uppercase tracking-wider">Delicata</span>
-                    <h4 class="text-sm font-bold text-[#1c1917] mt-2 mb-1">Matura & Atrofica</h4>
-                    <p class="text-[11px] text-[#57534e] leading-relaxed mb-3">Perdita di collagene ed elastina. Spessore epidermico molto ridotto.</p>
-                  </div>
-                  <div class="bg-[#faf7f2] p-2.5 rounded-lg border border-[#e7e5e4]">
-                    <span class="text-[10px] font-bold text-[#1c1917] block mb-0.5">TECNICA RACCOMANDATA:</span>
-                    <span class="text-[11px] text-[#d8318a] font-semibold">Soft Shading &bull; No passaggi ripetuti</span>
-                  </div>
-                </div>
+              <!-- Right Column (44%) Swatch Cutout -->
+              <div class="w-[44%] h-full relative overflow-hidden cut-slide2-swatch shadow-inner">
+                <img src="img/texture_swatch.jpg" class="w-full h-full object-cover object-center scale-105" alt="Texture pelle e siero">
               </div>
             </div>
 
@@ -942,13 +851,13 @@ window.slideDefinitions = [
 
   {
     num: '14',
-    cat: 'SLIDE 14 (REF) — OPENER CAPITOLO 1.3',
+    cat: 'SLIDE 14 (REF) — OPENER COLORIMETRIA',
     title: 'Colorimetria e Pigmentologia',
-    desc: 'Apertura del Capitolo 1.3: la scienza del colore applicata alla chimica cutanea e la prevenzione dei viraggi.',
+    desc: 'Apertura ufficiale del Capitolo 1.3: la scienza chimica del colore applicata alla biologia cutanea.',
     thumb: 'img/cover_model.jpg',
     refCrop: 'ref_crops/ref_slide_01.png',
     render: () => `<div class="w-full h-full bg-[#faf7f2] relative flex p-10 md:p-14 select-none overflow-hidden text-[#171412]">
-            <!-- Left 54% Column -->
+            <!-- Left Column (54%) -->
             <div class="w-[54%] h-full flex flex-col justify-between pr-4 z-20">
               <div>
                 <p class="header-meta">CAPITOLO 1.3 &bull; FONDAMENTI</p>
@@ -960,16 +869,16 @@ window.slideDefinitions = [
                   <path d="M10,12 Q34,5 54,9" stroke="#d8318a" stroke-width="2.5" stroke-linecap="round" fill="none"></path>
                 </svg>
 
-                <h1 class="serif-title text-5xl md:text-6xl lg:text-[5.2rem] text-[#171412] leading-[0.94] tracking-tight mb-5">
-                  Colorimetria &<br><span class="pink-italic">Pigmentologia</span>
+                <h1 class="serif-title text-5xl md:text-6xl lg:text-[5.5rem] text-[#171412] leading-[0.94] tracking-tight mb-5">
+                  Colorimetria<br>& <span class="pink-italic">Pigmentologia</span>
                 </h1>
 
-                <p class="text-sm md:text-base text-[#292524] max-w-md leading-[1.5] mb-4">
-                  Il colore non si sceglie "a occhio". Nel trucco semipermanente, il risultato guarito è la somma algebrica tra la chimica del pigmento e la luce filtrata dal sottotono biologico della pelle.
+                <p class="text-xs md:text-sm text-[#292524] max-w-md leading-[1.5] mb-4">
+                  Il colore non si sceglie ad occhio. Il risultato guarito è la fusione algebrica tra la chimica del pigmento e la luce filtrata dal sottotono biologico della pelle.
                 </p>
 
-                <div class="inline-block px-3.5 py-1.5 rounded-full bg-[#fce7f3] border border-[#fbcfe8] text-[#831843] text-xs font-bold uppercase tracking-wider">
-                  Itten &bull; Sottotono &bull; Neutralizzazione
+                <div class="flex items-center space-x-3 text-xs text-[#d8318a] font-semibold tracking-wide uppercase">
+                  <span>Itten</span> &bull; <span>Sottotono</span> &bull; <span>Neutralizzazione</span>
                 </div>
               </div>
 
@@ -979,7 +888,7 @@ window.slideDefinitions = [
               </div>
             </div>
 
-            <!-- Right 46% Background / Model -->
+            <!-- Right Column (46%) Model Layer -->
             <div class="w-[46%] h-full relative overflow-hidden cut-slide1-pink shadow-2xl">
               <img src="img/slide01_model_layer.png" class="w-full h-full object-cover object-top" alt="Modella Colorimetria">
             </div>
@@ -990,7 +899,7 @@ window.slideDefinitions = [
     num: '15',
     cat: 'SLIDE 15 (REF) — CERCHIO DI ITTEN',
     title: 'Il cerchio cromatico di Itten',
-    desc: 'Primari, secondari, terziari e la legge dei complementari opposti per la neutralizzazione dei viraggi.',
+    desc: 'La ruota cromatica dei primari, secondari e la legge dei complementari neutralizzanti.',
     thumb: 'img/diagram_color_wheel.png',
     refCrop: 'ref_crops/ref_slide_08.png',
     render: () => `<div class="w-full h-full bg-[#faf7f2] relative flex flex-col justify-between p-10 md:p-14 select-none overflow-hidden text-[#171412]">
@@ -999,57 +908,54 @@ window.slideDefinitions = [
               <p class="header-meta">MODULO 1 &nbsp;|&nbsp; FOUNDATION &nbsp;&nbsp; <strong class="text-[#1c1917] text-sm">15</strong></p>
             </div>
 
-            <div class="flex w-full flex-grow items-center my-auto z-10 gap-8">
-              <!-- Left: Content -->
-              <div class="w-[55%] flex flex-col justify-center pr-2">
-                <h2 class="serif-title text-4xl md:text-5xl lg:text-[4rem] text-[#171412] mb-3 leading-[0.96]">
+            <div class="flex w-full flex-grow items-stretch my-auto z-10">
+              <!-- Left Column: 54% -->
+              <div class="w-[54%] flex flex-col justify-center pr-6 my-auto py-2">
+                <h2 class="serif-title text-4xl md:text-5xl lg:text-[4.2rem] text-[#171412] mb-3 leading-[0.96]">
                   Il cerchio di <span class="pink-italic">Itten</span>
                 </h2>
-                <p class="text-xs md:text-sm text-[#292524] mb-5 max-w-lg leading-[1.5]">
-                  La base della pigmentologia: combinando i 3 colori primari si ottengono i secondari. I colori diametralmente opposti sono complementari e, se sovrapposti, si annullano a vicenda.
+                <p class="text-xs md:text-sm text-[#292524] mb-5 max-w-md leading-[1.45]">
+                  La base di ogni miscela: i colori opposti sono complementari. Quando entrano in contatto nel tessuto cutaneo, si annullano e bilanciano reciprocamente.
                 </p>
 
-                <div class="space-y-3 max-w-lg">
-                  <div class="bg-white p-3 rounded-xl border border-[#e7e5e4] shadow-sm flex items-center space-x-3">
-                    <div class="flex space-x-1">
-                      <span class="w-4 h-4 rounded-full bg-[#eab308]"></span>
-                      <span class="w-4 h-4 rounded-full bg-[#ef4444]"></span>
-                      <span class="w-4 h-4 rounded-full bg-[#3b82f6]"></span>
+                <!-- 3 Editorial Rows with Badges -->
+                <div class="flex flex-col space-y-3.5 max-w-md">
+                  <div class="flex items-center space-x-3.5">
+                    <div class="w-8 h-8 rounded-full bg-[#d8318a] text-white flex items-center justify-center flex-shrink-0 text-xs shadow-sm">
+                      <i class="fa-solid fa-palette"></i>
                     </div>
                     <div>
-                      <h4 class="text-xs font-bold text-[#1c1917]">Colori Primari: Giallo &bull; Rosso &bull; Blu</h4>
-                      <p class="text-[11px] text-[#78716c]">Colori puri non ottenibili da altre miscele. Il blu ha la molecola più fredda e stabile.</p>
+                      <h4 class="text-sm font-bold text-[#1c1917]">Colori Primari: Giallo &bull; Rosso &bull; Blu</h4>
+                      <p class="text-xs text-[#57534e]">Colori puri base. Il blu ha la molecola più stabile e fredda.</p>
                     </div>
                   </div>
 
-                  <div class="bg-white p-3 rounded-xl border border-[#e7e5e4] shadow-sm flex items-center space-x-3">
-                    <div class="flex space-x-1">
-                      <span class="w-4 h-4 rounded-full bg-[#f97316]"></span>
-                      <span class="w-4 h-4 rounded-full bg-[#22c55e]"></span>
-                      <span class="w-4 h-4 rounded-full bg-[#a855f7]"></span>
+                  <div class="flex items-center space-x-3.5">
+                    <div class="w-8 h-8 rounded-full bg-[#d8318a] text-white flex items-center justify-center flex-shrink-0 text-xs shadow-sm">
+                      <i class="fa-solid fa-shapes"></i>
                     </div>
                     <div>
-                      <h4 class="text-xs font-bold text-[#1c1917]">Colori Secondari: Arancio &bull; Verde &bull; Viola</h4>
-                      <p class="text-[11px] text-[#78716c]">Nati dalla fusione di due primari. Strumenti cardine per le correzioni e viraggi.</p>
+                      <h4 class="text-sm font-bold text-[#1c1917]">Colori Secondari: Arancio &bull; Verde &bull; Viola</h4>
+                      <p class="text-xs text-[#57534e]">Nati dall'unione dei primari: i veri correttivi per i viraggi.</p>
                     </div>
                   </div>
 
-                  <div class="bg-[#fdf2f8] p-3 rounded-xl border border-[#fbcfe8] flex items-center space-x-3">
-                    <div class="w-6 h-6 rounded-full bg-[#d8318a] text-white flex items-center justify-center flex-shrink-0 text-[10px] font-bold">
+                  <div class="flex items-center space-x-3.5">
+                    <div class="w-8 h-8 rounded-full bg-[#d8318a] text-white flex items-center justify-center flex-shrink-0 text-xs shadow-sm">
                       <i class="fa-solid fa-arrows-rotate"></i>
                     </div>
                     <div>
-                      <h4 class="text-xs font-extrabold text-[#831843]">Legge dei Complementari (Neutralizzazione)</h4>
-                      <p class="text-[11px] text-[#1c1917]">Colori opposti si neutralizzano: <strong>Arancio annulla Grigio</strong> &bull; <strong>Verde annulla Rosso</strong>.</p>
+                      <h4 class="text-sm font-bold text-[#1c1917]">La Legge dei Complementari (Neutralizzazione)</h4>
+                      <p class="text-xs text-[#57534e]">L'arancio annulla il grigio; l'oliva corregge il rosso.</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- Right: Color Wheel Graphic -->
-              <div class="w-[45%] flex items-center justify-center">
+              <!-- Right Column (46%) Floating Color Wheel -->
+              <div class="w-[46%] h-full flex items-center justify-center relative">
                 <div class="w-72 h-72 md:w-80 md:h-80 relative flex items-center justify-center">
-                  <img src="img/diagram_color_wheel.png" class="w-full h-full object-contain drop-shadow-xl" alt="Ruota cromatica di Itten">
+                  <img src="img/diagram_color_wheel.png" class="w-full h-full object-contain drop-shadow-xl" alt="Ruota cromatica Itten">
                 </div>
               </div>
             </div>
@@ -1063,76 +969,48 @@ window.slideDefinitions = [
 
   {
     num: '16',
-    cat: 'SLIDE 16 (REF) — SOTTOTONO CUTANEO',
-    title: 'Fototipo vs Sottotono',
-    desc: 'La formula aurea del risultato guarito: Pigmento Scelto + Sottotono Biologico = Colore Finale.',
-    thumb: 'img/ai_cover_model.jpg',
+    cat: 'SLIDE 16 (REF) — STATEMENT BLUSH',
+    title: '«Il fototipo è in superficie, il sottotono decide il colore.»',
+    desc: 'Layout editoriale su fondo blush (#F1B5CB) con macro occhio e formula aurea in corsivo magenta.',
+    thumb: 'img/slide05_macro_model.jpg',
     refCrop: 'ref_crops/ref_slide_05.png',
-    render: () => `<div class="w-full h-full bg-[#faf7f2] relative flex flex-col justify-between p-10 md:p-14 select-none overflow-hidden text-[#171412]">
+    render: () => `<div class="w-full h-full relative select-none overflow-hidden flex flex-col justify-between p-10 md:p-14" style="background-color: #F1B5CB;">
+            <!-- Header matching slide 5 -->
             <div class="flex justify-between items-center z-20">
-              <p class="header-meta">PIGMENTOLOGIA &bull; EQUILIBRIO TERMICO</p>
-              <p class="header-meta">MODULO 1 &nbsp;|&nbsp; FOUNDATION &nbsp;&nbsp; <strong class="text-[#1c1917] text-sm">16</strong></p>
+              <p class="header-meta text-[#171412]/75">FILOSOFIA DEL COLORE</p>
+              <p class="header-meta text-[#171412]/75">MODULO 1 &nbsp;|&nbsp; FOUNDATION &nbsp;&nbsp; <strong class="text-[#1c1917] text-sm">16</strong></p>
             </div>
 
-            <div class="flex w-full flex-grow flex-col justify-center my-auto z-10 py-1">
-              <div class="mb-4">
-                <h2 class="serif-title text-4xl md:text-5xl lg:text-[4rem] text-[#171412] mb-2 leading-[0.96]">
-                  Fototipo vs <span class="pink-italic">Sottotono</span>
-                </h2>
-                <p class="text-xs md:text-sm text-[#292524] max-w-xl leading-[1.45]">
-                  Il fototipo è ciò che vediamo in superficie; il sottotono è la temperatura cromatica profonda che agisce come un filtro ottico sul pigmento guarito.
+            <!-- Main Content Area with Model Right & Quote Left -->
+            <div class="flex w-full flex-grow items-center z-10">
+              <!-- Left Column: Giant Editorial Serif Statement -->
+              <div class="w-[58%] flex flex-col justify-center pr-6 py-2">
+                <h1 class="serif-title text-[#171412] leading-[0.94] tracking-tight mb-5" style="font-size: clamp(34px, 4.4cqw, 62px);">
+                  «Il fototipo vive<br>
+                  in superficie.<br>
+                  Il sottotono è la luce<br>
+                  che <span style="color: #a55572; font-style: italic;">decide il colore.»</span>
+                </h1>
+
+                <!-- Subtext Formula in Editorial Style -->
+                <p class="text-sm md:text-base text-[#171412]/85 max-w-md leading-relaxed font-normal">
+                  La formula aurea della guarigione:<br>
+                  <strong class="text-[#171412]">Pigmento Scelto + Sottotono Biologico = Risultato a 28 Giorni</strong>.
                 </p>
               </div>
 
-              <!-- Master Formula Box -->
-              <div class="w-full max-w-4xl bg-gradient-to-r from-[#171412] to-[#2B2629] text-white p-4 rounded-2xl shadow-lg mb-5 flex items-center justify-around text-center">
-                <div class="flex-1">
-                  <span class="text-[10px] text-[#f48fb1] font-bold uppercase tracking-wider block">Flacone</span>
-                  <h4 class="text-sm font-bold">Pigmento Impiantato</h4>
-                </div>
-                <span class="text-xl font-light text-[#f48fb1]">+</span>
-                <div class="flex-1">
-                  <span class="text-[10px] text-[#f48fb1] font-bold uppercase tracking-wider block">Filtro Biologico</span>
-                  <h4 class="text-sm font-bold">Sottotono della Cute</h4>
-                </div>
-                <span class="text-xl font-light text-[#f48fb1]">=</span>
-                <div class="flex-1 bg-[#d8318a] py-2 px-3 rounded-xl">
-                  <span class="text-[10px] text-white font-extrabold uppercase tracking-wider block">Effetto a 28 Giorni</span>
-                  <h4 class="text-sm font-extrabold">Risultato Guarito</h4>
-                </div>
-              </div>
-
-              <!-- 3 Undertone Cards -->
-              <div class="grid grid-cols-3 gap-4 w-full max-w-4xl">
-                <div class="bg-white p-3.5 rounded-xl border border-[#e7e5e4] shadow-sm">
-                  <div class="flex items-center space-x-2 mb-1.5">
-                    <span class="w-3 h-3 rounded-full bg-[#f59e0b]"></span>
-                    <h4 class="text-xs font-bold text-[#1c1917] uppercase tracking-wide">Sottotono Caldo</h4>
-                  </div>
-                  <p class="text-[11px] text-[#57534e] leading-snug">Riflessi dorati, ambrati, pesca. Riscalda il pigmento. Tollera pigmenti neutri senza ingrigire.</p>
-                </div>
-
-                <div class="bg-white p-3.5 rounded-xl border border-[#e7e5e4] shadow-sm">
-                  <div class="flex items-center space-x-2 mb-1.5">
-                    <span class="w-3 h-3 rounded-full bg-[#3b82f6]"></span>
-                    <h4 class="text-xs font-bold text-[#1c1917] uppercase tracking-wide">Sottotono Freddo</h4>
-                  </div>
-                  <p class="text-[11px] text-[#57534e] leading-snug">Riflessi bluastri, rosati o olivastri. Raffredda sensibilmente il colore. Richiede sempre una base calda.</p>
-                </div>
-
-                <div class="bg-white p-3.5 rounded-xl border border-[#e7e5e4] shadow-sm">
-                  <div class="flex items-center space-x-2 mb-1.5">
-                    <span class="w-3 h-3 rounded-full bg-[#10b981]"></span>
-                    <h4 class="text-xs font-bold text-[#1c1917] uppercase tracking-wide">Sottotono Neutro</h4>
-                  </div>
-                  <p class="text-[11px] text-[#57534e] leading-snug">Perfetto equilibrio tra caldo e freddo. Massima fedeltà cromatica rispetto al colore visto nel flacone.</p>
+              <!-- Right Column: High-Res Macro Model Bleed -->
+              <div class="w-[42%] h-full relative flex items-center justify-end">
+                <div class="w-full h-[90%] rounded-2xl overflow-hidden shadow-2xl relative">
+                  <img src="img/slide05_macro_model.jpg" class="w-full h-full object-cover object-center" alt="Dettaglio sguardo e sottotono">
                 </div>
               </div>
             </div>
 
+            <!-- Footer matching reference -->
             <div class="flex items-center space-x-3 z-20">
               <div class="w-10 h-[2px] bg-[#d8318a]"></div>
-              <p class="header-meta text-[#78716c]">ANALISI CROMATICA BIOLOGICA</p>
+              <p class="header-meta text-[#171412]/75">FORMULA AUREA CROMATICA</p>
             </div>
           </div>`
   },
@@ -1140,100 +1018,85 @@ window.slideDefinitions = [
   {
     num: '17',
     cat: 'SLIDE 17 (REF) — VIRAGGI E NEUTRALIZZAZIONE',
-    title: 'Viraggi & Neutralizzazione',
-    desc: 'Protocolli di correzione cromatica per sopracciglia grigie, rosse e labbra scure mediante complementari esatti.',
+    title: 'Viraggi & neutralizzazione',
+    desc: '3 casi di correzione cromatica con campioni colore e neutralizzatori complementari.',
     thumb: 'img/ai_texture_cream.jpg',
     refCrop: 'ref_crops/ref_slide_06.png',
     render: () => `<div class="w-full h-full bg-[#faf7f2] relative flex flex-col justify-between p-10 md:p-14 select-none overflow-hidden text-[#171412]">
             <div class="flex justify-between items-center z-20">
-              <p class="header-meta">CORREZIONE &bull; PROTOCOLLO DI NEUTRALIZZAZIONE</p>
+              <p class="header-meta">CORREZIONE CROMATICA</p>
               <p class="header-meta">MODULO 1 &nbsp;|&nbsp; FOUNDATION &nbsp;&nbsp; <strong class="text-[#1c1917] text-sm">17</strong></p>
             </div>
 
             <div class="flex w-full flex-grow flex-col justify-center my-auto z-10 py-1">
-              <div class="mb-4">
-                <h2 class="serif-title text-4xl md:text-5xl lg:text-[4rem] text-[#171412] mb-2 leading-[0.96]">
+              <div class="mb-5 max-w-xl">
+                <h2 class="serif-title text-4xl md:text-5xl lg:text-[4.2rem] text-[#171412] mb-2 leading-[0.96]">
                   Viraggi & <span class="pink-italic">neutralizzazione</span>
                 </h2>
-                <p class="text-xs md:text-sm text-[#292524] max-w-xl leading-[1.45]">
-                  Neutralizzare non significa coprire con toni scuri o compatti, ma ripristinare la neutralità cromatica usando il complementare della dominante indesiderata.
+                <p class="text-xs md:text-sm text-[#292524] leading-[1.45]">
+                  Neutralizzare non significa coprire con uno strato scuro, ma applicare il complementare esatto per assorbire la lunghezza d'onda indesiderata.
                 </p>
               </div>
 
-              <!-- 3 Case Studies -->
-              <div class="grid grid-cols-3 gap-4 w-full max-w-5xl">
-                <!-- Case 1: Sopracciglia Grigie / Bluastre -->
-                <div class="bg-white p-4 rounded-xl border border-[#e7e5e4] shadow-sm flex flex-col justify-between">
-                  <div>
-                    <div class="flex items-center space-x-2 mb-2">
-                      <span class="w-5 h-5 rounded-full bg-[#64748b] border border-[#cbd5e1]"></span>
-                      <h4 class="text-xs font-bold text-[#1c1917] uppercase">Viraggio a Grigio / Blu</h4>
-                    </div>
-                    <p class="text-[11px] text-[#57534e] mb-2 leading-relaxed">
-                      <strong>Causa:</strong> Impianto troppo profondo (effetto Tyndall) oppure pigmento a base fredda su sottotono freddo.
-                    </p>
+              <!-- 3 Case Rows with Pure Color Transitions -->
+              <div class="grid grid-cols-3 gap-6 w-full max-w-5xl">
+                <!-- Case 1 -->
+                <div class="flex flex-col space-y-2">
+                  <div class="flex items-center space-x-3 mb-1">
+                    <span class="w-6 h-6 rounded-full bg-[#64748b] shadow"></span>
+                    <i class="fa-solid fa-arrow-right text-xs text-[#d8318a]"></i>
+                    <span class="w-6 h-6 rounded-full bg-[#ea580c] shadow"></span>
                   </div>
-                  <div class="bg-[#fff7ed] p-2.5 rounded-lg border border-[#fed7aa] mt-2">
-                    <span class="text-[10px] font-bold text-[#c2410c] block">NEUTRALIZZATORE:</span>
-                    <span class="text-[11px] text-[#ea580c] font-bold">Arancio Caldo / Zucca</span>
-                  </div>
+                  <h4 class="text-sm font-bold text-[#1c1917]">Sopracciglia Grigie / Blu</h4>
+                  <p class="text-xs text-[#57534e]">Causa: impianto troppo profondo o base fredda.</p>
+                  <p class="text-xs font-semibold text-[#d8318a]">Neutralizzatore: Arancio Caldo / Zucca</p>
                 </div>
 
-                <!-- Case 2: Sopracciglia Rosse / Aranciate -->
-                <div class="bg-white p-4 rounded-xl border border-[#e7e5e4] shadow-sm flex flex-col justify-between">
-                  <div>
-                    <div class="flex items-center space-x-2 mb-2">
-                      <span class="w-5 h-5 rounded-full bg-[#ef4444] border border-[#fca5a5]"></span>
-                      <h4 class="text-xs font-bold text-[#1c1917] uppercase">Viraggio a Rosso / Salmone</h4>
-                    </div>
-                    <p class="text-[11px] text-[#57534e] mb-2 leading-relaxed">
-                      <strong>Causa:</strong> Degradazione precoce del nero (ossido di ferro o carbon black) o pigmento con eccesso di ossido rosso.
-                    </p>
+                <!-- Case 2 -->
+                <div class="flex flex-col space-y-2">
+                  <div class="flex items-center space-x-3 mb-1">
+                    <span class="w-6 h-6 rounded-full bg-[#ef4444] shadow"></span>
+                    <i class="fa-solid fa-arrow-right text-xs text-[#d8318a]"></i>
+                    <span class="w-6 h-6 rounded-full bg-[#65a30d] shadow"></span>
                   </div>
-                  <div class="bg-[#f0fdf4] p-2.5 rounded-lg border border-[#bbf7d0] mt-2">
-                    <span class="text-[10px] font-bold text-[#15803d] block">NEUTRALIZZATORE:</span>
-                    <span class="text-[11px] text-[#16a34a] font-bold">Oliva / Verde Desaturato</span>
-                  </div>
+                  <h4 class="text-sm font-bold text-[#1c1917]">Sopracciglia Rosse / Salmone</h4>
+                  <p class="text-xs text-[#57534e]">Causa: degradazione rapida del nero organico.</p>
+                  <p class="text-xs font-semibold text-[#d8318a]">Neutralizzatore: Verde Oliva Desaturato</p>
                 </div>
 
-                <!-- Case 3: Labbra Violacee / Scure -->
-                <div class="bg-white p-4 rounded-xl border border-[#e7e5e4] shadow-sm flex flex-col justify-between">
-                  <div>
-                    <div class="flex items-center space-x-2 mb-2">
-                      <span class="w-5 h-5 rounded-full bg-[#701a75] border border-[#f0abfc]"></span>
-                      <h4 class="text-xs font-bold text-[#1c1917] uppercase">Labbra Violacee / Fredde</h4>
-                    </div>
-                    <p class="text-[11px] text-[#57534e] mb-2 leading-relaxed">
-                      <strong>Causa:</strong> Elevata concentrazione di melanina bluastra e vascolarizzazione profonda naturale.
-                    </p>
+                <!-- Case 3 -->
+                <div class="flex flex-col space-y-2">
+                  <div class="flex items-center space-x-3 mb-1">
+                    <span class="w-6 h-6 rounded-full bg-[#701a75] shadow"></span>
+                    <i class="fa-solid fa-arrow-right text-xs text-[#d8318a]"></i>
+                    <span class="w-6 h-6 rounded-full bg-[#f97316] shadow"></span>
                   </div>
-                  <div class="bg-[#fdf2f8] p-2.5 rounded-lg border border-[#fbcfe8] mt-2">
-                    <span class="text-[10px] font-bold text-[#831843] block">NEUTRALIZZATORE:</span>
-                    <span class="text-[11px] text-[#d8318a] font-bold">Arancio Puro / Mandarino</span>
-                  </div>
+                  <h4 class="text-sm font-bold text-[#1c1917]">Labbra Violacee / Fredde</h4>
+                  <p class="text-xs text-[#57534e]">Causa: melanina fredda intensa della mucosa.</p>
+                  <p class="text-xs font-semibold text-[#d8318a]">Neutralizzatore: Arancio Mandarino puro</p>
                 </div>
               </div>
             </div>
 
             <div class="flex items-center space-x-3 z-20">
               <div class="w-10 h-[2px] bg-[#d8318a]"></div>
-              <p class="header-meta text-[#78716c]">PROTOCOLLO DI CORREZIONE</p>
+              <p class="header-meta text-[#78716c]">PROTOCOLLO DI NEUTRALIZZAZIONE</p>
             </div>
           </div>`
   },
 
   {
     num: '18',
-    cat: 'SLIDE 18 (REF) — OPENER CAPITOLO 1.5',
+    cat: 'SLIDE 18 (REF) — OPENER STRUMENTAZIONE',
     title: 'Strumentazione e Aghi',
-    desc: 'Apertura del Capitolo 1.5: la meccanica del dermografo, corsa (stroke), calibri e configurazioni.',
+    desc: 'Apertura del Capitolo 1.5: la meccanica del dermografo, corsa (stroke) e fisica della penetrazione.',
     thumb: 'img/sample_model_profile.jpg',
     refCrop: 'ref_crops/ref_slide_01.png',
     render: () => `<div class="w-full h-full bg-[#faf7f2] relative flex p-10 md:p-14 select-none overflow-hidden text-[#171412]">
-            <!-- Left 54% Column -->
+            <!-- Left Column (54%) -->
             <div class="w-[54%] h-full flex flex-col justify-between pr-4 z-20">
               <div>
-                <p class="header-meta">CAPITOLO 1.5 &bull; FISICA DELLO STRUMENTO</p>
+                <p class="header-meta">CAPITOLO 1.5 &bull; MECCANICA DI PRECISIONE</p>
               </div>
 
               <div class="my-auto py-2">
@@ -1242,16 +1105,16 @@ window.slideDefinitions = [
                   <path d="M10,12 Q34,5 54,9" stroke="#d8318a" stroke-width="2.5" stroke-linecap="round" fill="none"></path>
                 </svg>
 
-                <h1 class="serif-title text-5xl md:text-6xl lg:text-[5.2rem] text-[#171412] leading-[0.94] tracking-tight mb-5">
-                  Strumentazione &<br><span class="pink-italic">Aghi</span>
+                <h1 class="serif-title text-5xl md:text-6xl lg:text-[5.5rem] text-[#171412] leading-[0.94] tracking-tight mb-5">
+                  Strumentazione<br>& <span class="pink-italic">Aghi</span>
                 </h1>
 
-                <p class="text-sm md:text-base text-[#292524] max-w-md leading-[1.5] mb-4">
-                  La mano è l'artista, ma il dermografo è il condotto di precisione. Comprendere corsa (stroke), oscillazione e calibro dell'ago distingue una dilettante da una Master PMU.
+                <p class="text-xs md:text-sm text-[#292524] max-w-md leading-[1.5] mb-4">
+                  La mano è la sensibilità dell'artista; il dermografo è il condotto di precisione della scienza. Corsa, frequenza e calibro trasformano il tocco in perfezione.
                 </p>
 
-                <div class="inline-block px-3.5 py-1.5 rounded-full bg-[#fce7f3] border border-[#fbcfe8] text-[#831843] text-xs font-bold uppercase tracking-wider">
-                  Dermografi &bull; Stroke &bull; Configurazioni RL / RS
+                <div class="flex items-center space-x-3 text-xs text-[#d8318a] font-semibold tracking-wide uppercase">
+                  <span>Dermografi</span> &bull; <span>Stroke</span> &bull; <span>Configurazioni RL / RS</span>
                 </div>
               </div>
 
@@ -1261,9 +1124,9 @@ window.slideDefinitions = [
               </div>
             </div>
 
-            <!-- Right 46% Background / Model -->
-            <div class="w-[46%] h-full relative overflow-hidden cut-slide1-pink shadow-2xl">
-              <img src="img/slide03_model_layer.png" class="w-full h-full object-cover object-top" alt="Strumentazione PMU">
+            <!-- Right Column (46%) Model Layer -->
+            <div class="w-[46%] h-full relative overflow-hidden cut-slide3-pink shadow-2xl">
+              <img src="img/slide03_model_layer.png" class="w-full h-full object-cover object-top" alt="Strumentazione Dermografo">
             </div>
           </div>`
   },
@@ -1271,77 +1134,64 @@ window.slideDefinitions = [
   {
     num: '19',
     cat: 'SLIDE 19 (REF) — CONFIGURAZIONE AGHI',
-    title: 'Anatomia e configurazione degli aghi',
-    desc: 'Diametri da 0.18 mm a 0.35 mm, conicità taper e confronto operativo tra Round Liner e Round Shader.',
+    title: 'Configurazione degli aghi',
+    desc: 'Round Liner per linee e pelo singolo vs Round Shader per sfumature e campiture vellutate.',
     thumb: 'img/diagram_needles.png',
     refCrop: 'ref_crops/ref_slide_07.png',
     render: () => `<div class="w-full h-full bg-[#faf7f2] relative flex flex-col justify-between p-10 md:p-14 select-none overflow-hidden text-[#171412]">
             <div class="flex justify-between items-center z-20">
-              <p class="header-meta">STRUMENTAZIONE &bull; MECCANICA DI PRECISIONE</p>
+              <p class="header-meta">STRUMENTAZIONE DI PRECISIONE</p>
               <p class="header-meta">MODULO 1 &nbsp;|&nbsp; FOUNDATION &nbsp;&nbsp; <strong class="text-[#1c1917] text-sm">19</strong></p>
             </div>
 
-            <div class="flex w-full flex-grow items-center my-auto z-10 gap-8">
-              <!-- Left Column: 55% Content -->
-              <div class="w-[55%] flex flex-col justify-center pr-2">
-                <h2 class="serif-title text-4xl md:text-5xl lg:text-[4rem] text-[#171412] mb-3 leading-[0.96]">
-                  Configurazione degli <span class="pink-italic">aghi</span>
+            <div class="flex w-full flex-grow items-stretch my-auto z-10">
+              <!-- Left Column: 54% -->
+              <div class="w-[54%] flex flex-col justify-center pr-6 my-auto py-2">
+                <h2 class="serif-title text-4xl md:text-5xl lg:text-[4.2rem] text-[#171412] mb-3 leading-[0.96]">
+                  Configurazione<br>degli <span class="pink-italic">aghi</span>
                 </h2>
-                <p class="text-xs md:text-sm text-[#292524] mb-5 max-w-lg leading-[1.5]">
-                  La cartuccia PMU controlla il flusso e la dispersione delle micro-gocce. Diametro e saldatura delle punte determinano la nitidezza del pixel.
+                <p class="text-xs md:text-sm text-[#292524] mb-5 max-w-md leading-[1.45]">
+                  La cartuccia PMU controlla il flusso e la dispersione delle micro-gocce. Diametro e geometria delle punte determinano la nitidezza del pixel.
                 </p>
 
-                <div class="space-y-3 max-w-lg">
-                  <!-- Round Liner -->
-                  <div class="bg-white p-3 rounded-xl border border-[#e7e5e4] shadow-sm flex items-start space-x-3.5">
-                    <div class="w-8 h-8 rounded-full bg-[#fdf2f8] text-[#d8318a] flex items-center justify-center flex-shrink-0 text-xs font-bold border border-[#fbcfe8]">
+                <div class="flex flex-col space-y-4 max-w-md">
+                  <div class="flex items-center space-x-3.5">
+                    <div class="w-8 h-8 rounded-full bg-[#d8318a] text-white flex items-center justify-center flex-shrink-0 text-xs shadow-sm font-bold">
                       1RL
                     </div>
                     <div>
-                      <div class="flex items-center space-x-2">
-                        <h4 class="text-xs font-bold text-[#1c1917]">Round Liner (1RL / 3RL)</h4>
-                        <span class="text-[9px] bg-[#fce7f3] text-[#831843] px-1.5 py-0.2 rounded font-bold uppercase">Pelo & Pixel</span>
-                      </div>
-                      <p class="text-[11px] text-[#57534e] leading-snug mt-0.5">
-                        Punte saldate convergenti. Ideale per Hair Stroke ultra-sottile, linee grafiche, infracigliare e pixel di massima definizione.
-                      </p>
+                      <h4 class="text-sm font-bold text-[#1c1917]">Round Liner (1RL / 3RL)</h4>
+                      <p class="text-xs text-[#57534e]">Punte saldate convergenti: ideale per Hair Stroke ultra-sottile e pixel definiti.</p>
                     </div>
                   </div>
 
-                  <!-- Round Shader -->
-                  <div class="bg-white p-3 rounded-xl border border-[#e7e5e4] shadow-sm flex items-start space-x-3.5">
-                    <div class="w-8 h-8 rounded-full bg-[#fdf2f8] text-[#d8318a] flex items-center justify-center flex-shrink-0 text-xs font-bold border border-[#fbcfe8]">
+                  <div class="flex items-center space-x-3.5">
+                    <div class="w-8 h-8 rounded-full bg-[#d8318a] text-white flex items-center justify-center flex-shrink-0 text-xs shadow-sm font-bold">
                       3RS
                     </div>
                     <div>
-                      <div class="flex items-center space-x-2">
-                        <h4 class="text-xs font-bold text-[#1c1917]">Round Shader (3RS / 5RS)</h4>
-                        <span class="text-[9px] bg-[#fce7f3] text-[#831843] px-1.5 py-0.2 rounded font-bold uppercase">Sfumatura</span>
-                      </div>
-                      <p class="text-[11px] text-[#57534e] leading-snug mt-0.5">
-                        Punte saldate parallele aperte. Deposita un'ombreggiatura morbida: perfetto per Powder Brows vellutata e Lip Blush.
-                      </p>
+                      <h4 class="text-sm font-bold text-[#1c1917]">Round Shader (3RS / 5RS)</h4>
+                      <p class="text-xs text-[#57534e]">Punte parallele aperte: ideale per Powder Brows vellutata e Lip Blush omogeneo.</p>
                     </div>
                   </div>
 
-                  <!-- Diametri -->
-                  <div class="bg-[#faf7f2] p-3 rounded-xl border border-[#e7e5e4]">
-                    <h5 class="text-[11px] font-bold text-[#1c1917] mb-1">DIAMETRI DI RIFERIMENTO (CALIBRI):</h5>
-                    <div class="grid grid-cols-3 gap-2 text-[10px] text-[#57534e]">
-                      <div><strong>0.18 – 0.22 mm:</strong> Nano pelo ultra-fine</div>
-                      <div><strong>0.25 mm:</strong> Il jolly versatile per sopracciglia</div>
-                      <div><strong>0.30 – 0.35 mm:</strong> Campiture piene e labbra</div>
+                  <div class="flex items-center space-x-3.5">
+                    <div class="w-8 h-8 rounded-full bg-[#171412] text-white flex items-center justify-center flex-shrink-0 text-xs shadow-sm">
+                      <i class="fa-solid fa-gauge"></i>
+                    </div>
+                    <div>
+                      <h4 class="text-sm font-bold text-[#1c1917]">Calibri di Riferimento</h4>
+                      <p class="text-xs text-[#57534e]">0.18–0.22 mm (nano pelo) &bull; 0.25 mm (jolly brows) &bull; 0.30–0.35 mm (labbra)</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- Right Column: 45% Graphic Diagram -->
-              <div class="w-[45%] flex items-center justify-center">
-                <div class="w-full max-w-sm bg-white p-5 rounded-2xl border border-[#e7e5e4] shadow-xl text-center">
-                  <h4 class="serif-title text-lg text-[#171412] mb-2">Schema Tipologico dell'Ago</h4>
+              <!-- Right Column (46%) Needles Diagram -->
+              <div class="w-[46%] h-full flex items-center justify-center relative">
+                <div class="w-full max-w-sm p-4 rounded-2xl bg-white/70 border border-[#e7e5e4] shadow-xl text-center">
                   <img src="img/diagram_needles.png" class="w-full h-auto rounded-lg mb-2" alt="Diagramma aghi PMU">
-                  <p class="text-[10px] text-[#78716c] italic">«Conicità Long Taper: penetrazione elastica, minor trauma e pixel nitido.»</p>
+                  <p class="text-[10px] text-[#78716c] italic">«Conicità Long Taper: penetrazione elastica e trauma cutaneo minimo.»</p>
                 </div>
               </div>
             </div>
@@ -1356,12 +1206,12 @@ window.slideDefinitions = [
   {
     num: '20',
     cat: 'SLIDE 20 (REF) — STATEMENT OBSIDIAN',
-    title: 'La Triade della Precisione',
-    desc: 'Velocità, Pressione e Tensione a 3 vie: la regola aurea della precisione nel dermografo.',
+    title: '«Velocità, Pressione e Tensione a tre vie.»',
+    desc: 'Sfondo nero puro (#000000) con modella in penombra a filo bordo destro e titolo editoriale Playfair Display.',
     thumb: 'img/dark_model_highres.jpg',
     refCrop: 'ref_crops/ref_slide_09.png',
     render: () => `<div class="w-full h-full bg-[#000000] relative flex flex-col justify-between p-10 md:p-14 select-none overflow-hidden text-white">
-            <img src="img/slide09_model.jpg" class="absolute inset-0 w-full h-full object-cover object-right pointer-events-none select-none z-0" alt="Modella Dark Statement">
+            <img src="img/slide09_model.jpg" class="absolute inset-0 w-full h-full object-cover object-right pointer-events-none select-none z-0" alt="Modella Statement">
 
             <div class="flex justify-between items-center z-20 relative">
               <p class="header-meta text-white/80" style="letter-spacing: 0.16em;">REGOLA AUREA &bull; FONDAMENTI</p>
@@ -1369,7 +1219,7 @@ window.slideDefinitions = [
             </div>
 
             <div class="my-auto z-20 py-1 pl-2 max-w-2xl">
-              <h1 class="serif-title text-white font-normal select-none text-4xl md:text-5xl lg:text-[4.6rem] leading-[0.93] tracking-tight">
+              <h1 class="serif-title text-white font-normal select-none" style="font-size: clamp(34px, 4.85rem, 78px); line-height: 0.93; letter-spacing: -0.02em;">
                 Velocità, Pressione<br>
                 e Tensione a tre vie.<br>
                 La precisione è<br>
