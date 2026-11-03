@@ -370,10 +370,11 @@
       vp.style.width = '100vw';
       vp.style.height = '100vh';
       vp.style.boxShadow = 'none';
-      const targetSlide = exportIdx ? parseInt(exportIdx, 10) : 0;
+      const targetSlide = exportIdx ? (parseInt(exportIdx, 10) - 1) : 0;
       renderActiveSlide(targetSlide);
     } else {
-      renderActiveSlide(0);
+      const targetSlide = exportIdx ? (parseInt(exportIdx, 10) - 1) : 0;
+      renderActiveSlide(targetSlide);
     }
   </script>
 </body>
